@@ -3,16 +3,40 @@
 	"type": "object",
 	"required": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
 	"properties": {
-		"mon": {"type": ["array", "null"] },
-		"tue": {"type": ["array", "null"],
-				"maxItems": 2,
-				"minItems": 2,
+		"mon": { "type": ["array", "null"],
+				 "maxItems": 2,
+				 "minItems": 2,
 				 "items": { "type": "string" }
 		},
-		"wed": { "type": ["array", "null"] },
-		"thu": { "type": ["array", "null"] },
-		"fri": { "type": ["array", "null"] },
-		"sat": { "type": ["array", "null"] },
-		"sun": { "type": ["array", "null"] }
+		"tue": { "type": ["array", "null"],
+				 "maxItems": 2,
+				 "minItems": 2,
+				 "items": { "type": "string" }
+		},
+		"wed": { "type": ["array", "null"],
+				 "maxItems": 2,
+				 "minItems": 2,
+				 "items": { "type": "string" }
+		},
+		"thu": { "type": ["array", "null"],
+				 "maxItems": 2,
+				 "minItems": 2,
+				 "items": { "type": "string" }
+		},
+		"fri": { "type": ["array", "null"],
+				 "maxItems": 2,
+				 "minItems": 2,
+				 "items": { "type": "string" }
+		},
+		"sat": { "type": ["array", "null"],
+				 "maxItems": 2,
+				 "minItems": 2,
+				 "items": { "type": "string" }
+		},
+		"sun": { "type": ["array", "null"],
+				 "maxItems": 2,
+				 "minItems": 2,
+				 "items": { "type": "string" }
+		}
 	}
 }
