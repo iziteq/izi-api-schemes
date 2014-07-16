@@ -10,7 +10,7 @@
 			"type": "string"
 		},
 		"uuid" : {
-			"description": "UUID of object (standardized by OSF)"
+			"description": "UUID of object (standardized by OSF)",
 			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/uuid_schema"
 		}
 	}
