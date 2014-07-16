@@ -1,0 +1,17 @@
+{ 
+	"description": "Trigger zones - Place where media content must be played"
+	"type": "array",
+	"minItems": 1,
+	"items": {
+		"type": "object",
+		"required": ["type"],
+		"properties": {
+			"type": { "type": "string" },
+			"polygon_corners": { "type": "string" },
+			"circle_altitude": { "type": "number" },
+			"circle_latitude": { "type": "number" },
+			"circle_longitude": { "type": "number" },
+			"circle_radius": { "type": "number" }        
+		}
+	}        
+}

@@ -1,0 +1,7 @@
+{
+	"description": "Mapping details"
+	"type": "object",
+	"required": ["bounds"],
+	"bounds": { "type": "string" },
+	"route": { "type": "string" }
+}

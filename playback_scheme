@@ -1,0 +1,9 @@
+{ 
+	"description": "Playback - MTGObject playback algorithm settings"
+	"type": "object",
+	"required": ["type"],
+	"properties": {
+		"type": { "type" => "string" },
+		"order": { "type" => "array" }
+	}
+}

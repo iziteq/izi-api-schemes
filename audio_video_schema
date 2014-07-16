@@ -1,0 +1,18 @@
+{
+	"description": "Audio or Video objects"
+    "type": "array",
+    "minItems": 1,
+	"maxItems": 1,
+    "items": {
+		"type": "object",
+		"required": ["uuid", "type", "order", "duration"],
+		"properties": {
+			"uuid": { "type": "string" },
+			"type": { "type": "string" },
+			"order": { "type": "integer" },
+			"duration": { "type": "integer" },
+			"url": { "type": "string" },
+			"title": { "type": "string" }
+		}
+    },
+}

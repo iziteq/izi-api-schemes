@@ -1,0 +1,13 @@
+{
+	"description": "This object contains a list of links to offline packages"
+		"type": "object",
+		"required": ["ios-jpg:low-m4a-mp4", "ios-jpg:high-m4a-mp4", "android-jpg:low-m4a-mp4", "android-jpg:high-m4a-mp4"],
+		"properties": {
+			"ios-jpg:low-m4a-mp4": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/download_props_schema" },
+			"ios-jpg:high-m4a-mp4": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/download_props_schema" },
+			"android-jpg:low-m4a-mp4": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/download_props_schema" },
+			"android-jpg:high-m4a-mp4": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/download_props_schema" },
+			"video": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/download_props_schema" },
+			"map-mbtiles": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/download_props_schema" }
+		}
+}

@@ -1,0 +1,8 @@
+{
+	"description": "Commercial content purchase details"
+	"type":"object",
+	"required": ["price", "currency", "product_id"],
+	"price": { "type": "number" },
+	"currency": { "type": "string" },
+	"product_id": { "type": "string" }
+}
