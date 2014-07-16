@@ -1,0 +1,15 @@
+"content_provider" : {
+	"type": "object",
+	"required": ["uuid", "name"],
+	"properties": {
+		"copyright" : {
+			"type": "string"
+		},
+		"name" : {
+			"type": "string"
+		},
+		"uuid" : {
+			"type": "string"
+		}
+	}
+}
