@@ -1,0 +1,19 @@
+{
+	"description": "Properties for Package"
+	"type": "object",
+	"required": ["size", "url", "md5"],
+	"properties": {
+		"md5": {
+			"type": "string"
+		},
+		"size": {
+			"type": "number"
+		},
+		"updated_at" : {
+			"type": "string"
+		},
+		"url": {
+			"type": "string"
+		}
+	}
+}
