@@ -1,0 +1,16 @@
+{
+	"description": "Schedule",
+	"type": "object",
+	"required": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+	"properties": {
+		"mon": { "type": ["array", "null"] },
+		"tue": { "type": ["array", "null"],
+				 "items": { "type": "string" }
+		}
+		"wed": { "type": ["array", "null"] },
+		"thu": { "type": ["array", "null"] },
+		"fri": { "type": ["array", "null"] },
+		"sat": { "type": ["array", "null"] },
+		"sun": { "type": ["array", "null"] }
+	}
+}
