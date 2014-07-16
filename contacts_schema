@@ -1,0 +1,30 @@
+{
+	"description": "Contacts",
+	"type": "object",
+	"required": ["country", "city", "address"],
+	"properties": {
+		"address": {
+			"type": "string"
+		},
+		"city": {
+			"type": "string"
+		},
+		"country": {
+			"type": "string"
+		},
+		"phone_number": {
+			"type": "string"
+		},
+		"website": {
+			"type": "string"
+		},
+		"postcode": {
+			"type": "string"
+		},
+		"state": {
+			"type": "string"
+		}
+	}
+}
+
+

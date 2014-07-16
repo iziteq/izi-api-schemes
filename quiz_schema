@@ -1,0 +1,29 @@
+{
+	"description": "Quiz",
+	"type": "object",
+	"required": ["answers", "question"],
+	"properties": {
+		"answers" : {
+			"type": "array",
+			"items":
+			{
+				"type": "object",
+				"required": ["content", "correct"],
+				"properties": {
+					"content" : {
+						"type": "string"
+					},
+					"correct" : {
+						"type": "boolean"
+					}
+				}
+			}
+		},
+		"comment" : {
+			"type": "string"
+		},
+		"question" : {
+			"type": "string"
+		}
+	}
+}
