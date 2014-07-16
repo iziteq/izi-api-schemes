@@ -6,7 +6,7 @@
 		"mon": { "type": ["array", "null"] },
 		"tue": { "type": ["array", "null"],
 				 "items": { "type": "string" }
-		}
+		},
 		"wed": { "type": ["array", "null"] },
 		"thu": { "type": ["array", "null"] },
 		"fri": { "type": ["array", "null"] },
