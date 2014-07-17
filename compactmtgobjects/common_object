@@ -1,0 +1,26 @@
+{
+	"type" => "object",
+	"required" => ["uuid", "type", "content_provider", "language", "status", "title", "summary"],
+	"properties" => {
+		# Required
+		"uuid" => { "type" => "string" },
+		"type" => { "type" => "string" },
+		"content_provider" => { "$ref" => "#/definitions/content_provider" },
+		"language" => { "type" => "string" },            
+		"status" => { "type" => "string" },
+		"title" => { "type" => "string" },
+		"summary" => { "type" => "string" },            
+		# Optional
+		"category" => { "type" => "string" },
+		"duration" => { "type" => "integer" },
+		"distance" => { "type" => "integer" },
+		"purchase" => { "$ref" => "#/definitions/purchase" },
+		"location" => { "$ref" => "#definitions/location" },
+		"route" => { "type" => "string" },            
+		"trigger_zones" => { "$ref" => "#definitions/trigger_zones" },
+		"placement" => { "type" => "string" },
+		"hidden" => { "type" => "boolean" },
+		"images" => { "$ref" => "#/definitions/media_images" },
+		"children_count" => { "type" => "integer" }
+	}
+}
