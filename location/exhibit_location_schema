@@ -3,6 +3,6 @@
 	"type": "object",
 	"required": ["number"],
 	"properties": {
-		"number": { "type": "string" },
+		"number": { "type": "string" }
 	}
 }
