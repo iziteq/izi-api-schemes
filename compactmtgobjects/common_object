@@ -1,26 +1,35 @@
 {
-	"type" => "object",
-	"required" => ["uuid", "type", "content_provider", "language", "status", "title", "summary"],
-	"properties" => {
+	"description": "Common Compact MTG Object"
+	"type": "object",
+	"additionalProperties": false,
+	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary"],
+	"properties": {
 		# Required
-		"uuid" => { "type" => "string" },
-		"type" => { "type" => "string" },
-		"content_provider" => { "$ref" => "#/definitions/content_provider" },
-		"language" => { "type" => "string" },            
-		"status" => { "type" => "string" },
-		"title" => { "type" => "string" },
-		"summary" => { "type" => "string" },            
+		"uuid" : {
+			"description": "UUID of object (standardized by OSF)",
+			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
+		},
+		"type": { "type" => "string" },
+		"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
+		"language": { "type": "string" },   
+		"languages": { "type": "array",
+						"minItems": 1,
+						"items": { "type": "string"}
+		}, 		
+		"status": { "type": "string" },
+		"title": { "type": "string" },
+		"summary": { "type": "string" },            
 		# Optional
-		"category" => { "type" => "string" },
-		"duration" => { "type" => "integer" },
-		"distance" => { "type" => "integer" },
-		"purchase" => { "$ref" => "#/definitions/purchase" },
-		"location" => { "$ref" => "#definitions/location" },
-		"route" => { "type" => "string" },            
-		"trigger_zones" => { "$ref" => "#definitions/trigger_zones" },
-		"placement" => { "type" => "string" },
-		"hidden" => { "type" => "boolean" },
-		"images" => { "$ref" => "#/definitions/media_images" },
-		"children_count" => { "type" => "integer" }
+		"category": { "type": "string" },
+		"duration": { "type": "integer" },
+		"distance": { "type": "integer" },
+		"purchase": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/purchase_schema" },
+		"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/full_location_schema" },
+		"route": { "type": "string" },            
+		"trigger_zones": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/trigger_zones_schema" },
+		"placement": { "type": "string" },
+		"hidden": { "type": "boolean" },
+		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
+		"children_count": { "type": "integer" }
 	}
 }
