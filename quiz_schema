@@ -1,6 +1,7 @@
 {
 	"description": "Quiz",
 	"type": "object",
+	"additionalProperties": false,
 	"required": ["answers", "question"],
 	"properties": {
 		"answers" : {
@@ -10,6 +11,7 @@
 			"items":
 			{
 				"type": "object",
+				"additionalProperties": false,
 				"required": ["content", "correct"],
 				"properties": {
 					"content" : {

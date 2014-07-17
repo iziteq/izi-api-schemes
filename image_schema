@@ -4,6 +4,7 @@
     "minItems": 1,
     "items": {
 		"type": "object",
+		"additionalProperties": false,
 		"required": ["uuid", "type", "order"],
 		"properties": {
 			"uuid": { "type": "string" },

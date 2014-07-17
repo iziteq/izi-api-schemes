@@ -1,6 +1,7 @@
 { 
 	"description": "Playback - MTGObject playback algorithm settings"
 	"type": "object",
+	"additionalProperties": false,
 	"required": ["type"],
 	"properties": {
 		"type": { "type" => "string" },

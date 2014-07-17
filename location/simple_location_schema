@@ -1,0 +1,11 @@
+{ 
+	"description": "Simple Location Object",
+	"type": "object",
+	"additionalProperties": false,
+	"required": ["latitude", "longitude", "altitude"],
+	"properties": {
+		"latitude": { "type": "number" },
+		"longitude": { "type": "number" },
+		"altitude": { "type": "number" }
+	}
+}

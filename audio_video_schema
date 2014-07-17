@@ -5,6 +5,7 @@
 	"maxItems": 1,
     "items": {
 		"type": "object",
+		"additionalProperties": false,
 		"required": ["uuid", "type", "order", "duration"],
 		"properties": {
 			"uuid": { "type": "string" },

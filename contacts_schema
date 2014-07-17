@@ -1,6 +1,7 @@
 {
 	"description": "Contacts",
 	"type": "object",
+	"additionalProperties": false,
 	"required": ["country", "city", "address"],
 	"properties": {
 		"address": {

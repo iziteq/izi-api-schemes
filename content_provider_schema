@@ -1,6 +1,7 @@
 {
 	"description": "Content Provider",
 	"type": "object",
+	"additionalProperties": false,
 	"required": ["uuid", "name"],
 	"properties": {
 		"copyright" : {

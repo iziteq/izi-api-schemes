@@ -4,7 +4,6 @@
 	"additionalProperties": false,
 	"required": ["number"],
 	"properties": {
-		"number": { "type": "string" },
-		"test": { "type": "string" }
+		"number": { "type": "string" }
 	}
 }

@@ -1,12 +1,12 @@
 { 
-	"description": "Full Location Object",
+	"description": "Tour-Museum-TA Location Object",
 	"type": "object",
 	"additionalProperties": false,
+	"required": ["latitude", "longitude", "altitude", "city_uuid", "country_code", "country_uuid"],
 	"properties": {
 		"latitude": { "type": "number" },
 		"longitude": { "type": "number" },
 		"altitude": { "type": "number" },
-		"number": { "type": "string" },
 		"ip": { "type": "string" },
 		"city_uuid": { "type": "string" },
 		"country_code": { "type": "string" },

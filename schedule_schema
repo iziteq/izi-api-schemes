@@ -1,6 +1,7 @@
 {
 	"description": "Schedule",
 	"type": "object",
+	"additionalProperties": false,
 	"required": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"],
 	"properties": {
 		"mon": { "type": ["array", "null"],

@@ -1,6 +1,7 @@
 {
 	"description": "Properties for Package"
 	"type": "object",
+	"additionalProperties": false,
 	"required": ["size", "url", "md5"],
 	"properties": {
 		"md5": {

@@ -1,6 +1,7 @@
 {
 	"description": "Commercial content purchase details"
 	"type":"object",
+	"additionalProperties": false,
 	"required": ["price", "currency", "product_id"],
 	"price": { "type": "number" },
 	"currency": { "type": "string" },
