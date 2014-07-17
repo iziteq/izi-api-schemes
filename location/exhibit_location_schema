@@ -4,6 +4,6 @@
 	"additionalProperties": false,
 	"required": ["number"],
 	"properties": {
-		"number": { "type": "string", "pattern": "^lala$" }
+		"number": { "type": "string" }
 	}
 }

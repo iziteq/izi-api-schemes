@@ -1,0 +1,22 @@
+{
+	"description": Full Country Object
+	"type": "object",		
+	"additionalProperties": false,
+	"required": ["uuid", "type", "status", "languages", "content"],
+		"properties": {
+			# Required
+			"uuid" : {
+				"description": "UUID of object (standardized by OSF)",
+				"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
+			},
+			"type": { "type": "string", "pattern": "^country$" },
+			"status": { "type": "string"},
+			"languages": { "type": "array"},					
+			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_city_schema" },
+
+			# Optional				
+			"location": { "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/simple_location_schema" },
+			"translations": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/translations_schema" },
+			"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" }        
+		}
+}

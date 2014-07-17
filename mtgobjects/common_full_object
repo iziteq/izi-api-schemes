@@ -2,7 +2,7 @@
 	"description": Common full MTG Object
 	"type": "object",		
 	"additionalProperties": false,
-	"required": ["uuid", "type", "status", "content_provider""],
+	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "publisher"],
 		"properties": {
 			# Required
 			"uuid" : {
@@ -14,7 +14,7 @@
 			"languages": { "type": "array"},					
 			"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
 			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_schema" },
-
+			"publisher": {"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/publisher_compact_object"}, 
 			# Optional
 			"parent_uuid": { "type": "string"},
 			"category": { "type": "string"},
@@ -27,7 +27,9 @@
 			"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" },
 			"purchase": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/purchase_schema" },
 			"schedule": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/schedule_schema" },
-			"contacts": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/contacts_schema" },            
+			"contacts": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/contacts_schema" }, 
+			"city": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/city_compact_object" }, 
+			"country": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/country_compact_object" }           
 		},
     
     # Tour dependencies

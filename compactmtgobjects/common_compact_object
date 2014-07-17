@@ -2,7 +2,7 @@
 	"description": "Common Compact MTG Object"
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary"],
+	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "publisher"],
 	"properties": {
 		# Required
 		"uuid" : {
@@ -11,6 +11,7 @@
 		},
 		"type": { "type" => "string" },
 		"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
+		"publisher": {"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/publisher_compact_object"}, 
 		"language": { "type": "string" },   
 		"languages": { "type": "array",
 						"minItems": 1,
