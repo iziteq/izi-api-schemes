@@ -1,0 +1,14 @@
+{
+	"description": "Translations for cities and countries"
+    "type": "array",
+    "minItems": 1,
+    "items": {
+		"type": "object",
+		"additionalProperties": false,
+		"required": ["language", "name"],
+		"properties": {
+			"language": { "type": "string" },
+			"name": { "type": "string" }
+		}
+    },
+}

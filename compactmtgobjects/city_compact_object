@@ -1,0 +1,28 @@
+{
+	"description": "City Compact MTG Object"
+	"type": "object",
+	"additionalProperties": false,
+	"required": ["uuid", "type", "visible", "language", "languages", "status", "title", "summary"],
+	"properties": {
+		# Required
+		"uuid" : {
+			"description": "UUID of object (standardized by OSF)",
+			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
+		},
+		"type": { "type" => "string" },
+		"visible": { "type" => "boolean" },
+		"language": { "type": "string" },   
+		"languages": { "type": "array",
+						"minItems": 1,
+						"items": { "type": "string"}
+		}, 		
+		"status": { "type": "string" },
+		"title": { "type": "string" },
+		"summary": { "type": "string" },            
+		# Optional
+		"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/city_location_schema" },        
+		"translations": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/translations_schema" },
+		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
+		"children_count": { "type": "integer" }
+	}
+}

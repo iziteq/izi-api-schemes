@@ -1,0 +1,37 @@
+{
+	"description": Common full MTG Object
+	"type": "object",		
+	"additionalProperties": false,
+	"required": ["uuid", "type", "status", "content_provider""],
+		"properties": {
+			# Required
+			"uuid" : {
+				"description": "UUID of object (standardized by OSF)",
+				"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
+			},
+			"type": { "type": "string"},
+			"status": { "type": "string"},
+			"languages": { "type": "array"},					
+			"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
+			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_schema" },
+
+			# Optional
+			"parent_uuid": { "type": "string"},
+			"category": { "type": "string"},
+			"duration": { "type": "number"},
+			"distance": { "type": "number"},
+			"placement": { "type": "string"},
+			"hidden": { "type": "boolean"},					
+			"location": { "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/full_location_schema" },
+			"trigger_zones": { "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/trigger_zones_schema" },
+			"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" },
+			"purchase": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/purchase_schema" },
+			"schedule": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/schedule_schema" },
+			"contacts": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/contacts_schema" },            
+		},
+    
+    # Tour dependencies
+    "dependencies": {
+      "placement": ["category", "duration", "distance"]
+    }
+}
