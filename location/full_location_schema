@@ -1,5 +1,5 @@
 { 
-	"description": "Full Location Object"
+	"description": "Full Location Object",
 	"type": "object",
 	"properties": {
 		"latitude": { "type": "number" },
