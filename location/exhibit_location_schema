@@ -1,0 +1,8 @@
+{ 
+	"description": "Full Location Object"
+	"type": "object",
+	"required": ["number"],
+	"properties": {
+		"number": { "type": "string" },
+	}
+}
