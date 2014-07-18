@@ -1,28 +1,27 @@
 {
-	"description": "Museum Contacts",
+	"description": "Publisher Contacts",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["country", "city", "address"],
 	"properties": {
-		"address": {
-			"type": "string"
-		},
-		"city": {
-			"type": "string"
-		},
-		"country": {
-			"type": "string"
-		},
-		"phone_number": {
-			"type": "string"
-		},
 		"website": {
 			"type": "string"
 		},
-		"postcode": {
+		"email": {
 			"type": "string"
 		},
-		"state": {
+		"twitter": {
+			"type": "string"
+		},
+		"facebook": {
+			"type": "string"
+		},
+		"youtube": {
+			"type": "string"
+		},
+		"instagram": {
+			"type": "string"
+		},
+		"google": {
 			"type": "string"
 		}
 	}
