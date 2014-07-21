@@ -9,7 +9,7 @@
 				"description": "UUID of object (standardized by OSF)",
 				"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
 			},
-			"type": { "type": "string", "pattern": "^exhibit$" },
+			"type": { "type": "string", "pattern": "^collection$" },
 			"status": { "type": "string"},
 			"languages": { "type": "array"},
 			"parent_uuid": { "type": "string"},			

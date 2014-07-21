@@ -1,5 +1,5 @@
 {
-	"description": "City Compact MTG Object"
+	"description": "City Compact MTG Object",
 	"type": "object",
 	"additionalProperties": false,
 	"required": ["uuid", "type", "visible", "language", "languages", "status", "title", "summary"],

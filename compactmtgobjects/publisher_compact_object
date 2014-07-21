@@ -1,5 +1,5 @@
 {
-	"description": "Publisher Compact Object"
+	"description": "Publisher Compact Object",
 	"type": "object",
 	"additionalProperties": false,
 	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary"],

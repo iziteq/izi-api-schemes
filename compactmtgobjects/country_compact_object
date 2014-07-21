@@ -1,5 +1,5 @@
 {
-	"description": "Country Compact MTG Object"
+	"description": "Country Compact MTG Object",
 	"type": "object",
 	"additionalProperties": false,
 	"required": ["uuid", "type", "language", "languages", "status", "title", "summary"],
