@@ -4,7 +4,6 @@
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "parent_uuid", "location", "publisher"],
 		"properties": {
-			# Required
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
 				"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"

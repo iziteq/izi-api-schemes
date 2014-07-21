@@ -4,7 +4,6 @@
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content"],
 		"properties": {
-			# Required
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
 				"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
@@ -14,7 +13,6 @@
 			"languages": { "type": "array"},					
 			"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
 			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/publisher_content_schema" },
-			# Optional
 			"contacts": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/publisher_contacts_schema" },          
 		},
     
