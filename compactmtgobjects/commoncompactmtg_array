@@ -1,0 +1,8 @@
+{
+	"description": "Array of Compact MTG Objects",
+	"type": "array",				
+	"items": [
+		"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/common_compact_object"
+	],
+	"additionalItems" => false
+}
