@@ -1,5 +1,5 @@
 {
-	"description": "Image objects"
+	"description": "Image objects",
     "type": "array",
     "minItems": 1,
     "items": {
@@ -13,5 +13,5 @@
 			"url": { "type": "string" },
 			"title": { "type": "string" }
 		}
-    },
+    }
 }
