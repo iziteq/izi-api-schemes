@@ -17,7 +17,6 @@
 		}, 		
 		"status": { "type": "string" },
 		"title": { "type": "string" },
-		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
 		"summary": { "type": "string" }            
 	}
 }
