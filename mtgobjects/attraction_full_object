@@ -1,5 +1,5 @@
 {
-	"description": TA Full Object
+	"description": "TA Full Object",
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hidden", "location", "publisher"],

@@ -1,5 +1,5 @@
 {
-	"description": Full Nav Story Object
+	"description": "Full Nav Story Object",
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "parent_uuid", "location", "publisher"],

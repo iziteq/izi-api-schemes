@@ -1,5 +1,5 @@
 {
-	"description": Collection MTG Object
+	"description": "Collection MTG Object",
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "parent_uuid", "publisher"],

@@ -1,5 +1,5 @@
 {
-	"description": Full City Object
+	"description": "Full City Object",
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "languages", "visible", "content"],

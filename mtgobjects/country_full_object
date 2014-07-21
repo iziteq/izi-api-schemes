@@ -1,5 +1,5 @@
 {
-	"description": Full Country Object
+	"description": "Full Country Object",
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "languages", "content"],

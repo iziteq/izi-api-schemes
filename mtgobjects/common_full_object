@@ -1,5 +1,5 @@
 {
-	"description": Common full MTG Object
+	"description": "Common full MTG Object",
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "publisher"],

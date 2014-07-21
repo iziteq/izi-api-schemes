@@ -1,5 +1,5 @@
 {
-	"description": Publisher MTG Object
+	"description": "Publisher MTG Object",
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content"],
