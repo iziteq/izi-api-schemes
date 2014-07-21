@@ -4,12 +4,11 @@
 	"additionalProperties": false,
 	"required": ["uuid", "type", "visible", "language", "languages", "status", "title", "summary"],
 	"properties": {
-		# Required
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
 			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
 		},
-		"type": { "type" => "string", "pattern": "^city$" },
+		"type": { "type": "string", "pattern": "^city$" },
 		"visible": { "type" => "boolean" },
 		"language": { "type": "string" },   
 		"languages": { "type": "array",
@@ -19,7 +18,6 @@
 		"status": { "type": "string" },
 		"title": { "type": "string" },
 		"summary": { "type": "string" },            
-		# Optional
 		"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/city_location_schema" },        
 		"translations": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/translations_schema" },
 		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },

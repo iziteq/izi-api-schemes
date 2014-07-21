@@ -4,12 +4,11 @@
 	"additionalProperties": false,
 	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary"],
 	"properties": {
-		# Required
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
 			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
 		},
-		"type": { "type" => "string", "pattern": "^publisher$" },
+		"type": { "type": "string", "pattern": "^publisher$" },
 		"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
 		"language": { "type": "string" },   
 		"languages": { "type": "array",
