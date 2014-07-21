@@ -21,6 +21,6 @@
 		"translations": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/translations_schema" },
 		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
 		"children_count": { "type": "integer" },
-		"country_code" { "type": "string" }
+		"country_code": { "type": "string" }
 	}
 }
