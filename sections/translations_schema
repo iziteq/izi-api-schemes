@@ -1,5 +1,5 @@
 {
-	"description": "Translations for cities and countries"
+	"description": "Translations for cities and countries",
     "type": "array",
     "minItems": 1,
     "items": {
@@ -10,5 +10,5 @@
 			"language": { "type": "string" },
 			"name": { "type": "string" }
 		}
-    },
+    }
 }
