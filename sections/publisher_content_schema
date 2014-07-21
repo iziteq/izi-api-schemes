@@ -1,5 +1,5 @@
 {
-	"description": "Publisher Content"
+	"description": "Publisher Content",
 	"type": "array",
 	"minItems": 1,						
 	"items": [

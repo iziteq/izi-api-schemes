@@ -1,5 +1,5 @@
 {
-	"description": "Mapping details"
+	"description": "Mapping details",
 	"type": "object",
 	"additionalProperties": false,
 	"required": ["bounds"],

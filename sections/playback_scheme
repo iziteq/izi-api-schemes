@@ -1,5 +1,5 @@
 { 
-	"description": "Playback - MTGObject playback algorithm settings"
+	"description": "Playback - MTGObject playback algorithm settings",
 	"type": "object",
 	"additionalProperties": false,
 	"required": ["type"],

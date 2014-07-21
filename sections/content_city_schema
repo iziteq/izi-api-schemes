@@ -1,5 +1,5 @@
 {
-	"description": "MTG Object Content"
+	"description": "MTG Object Content",
 	"type": "array",
 	"minItems": 1,						
 	"items": [
@@ -7,12 +7,10 @@
 		"additionalProperties": false,
 		"required": ["language", "title", "summary", "desc"],
 		"properties": {
-			# Required
 			"language": { "type": "string" },
 			"title": { "type": "string" },
 			"summary": { "type": "string" },
-			"desc": { "type": "string" },
-			# Optional                       
+			"desc": { "type": "string" },                    
 			"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },             
 			"children": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/common_object" },
 		}              

@@ -1,5 +1,5 @@
 { 
-	"description": "Trigger zones - Place where media content must be played"
+	"description": "Trigger zones - Place where media content must be played",
 	"type": "array",
 	"minItems": 1,
 	"items": {
