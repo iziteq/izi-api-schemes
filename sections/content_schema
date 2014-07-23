@@ -2,7 +2,7 @@
 	"description": "MTG Object Content",
 	"type": "array",
 	"minItems": 1
-	"items": [
+	"items": {
 		"type": "object",
 		"additionalProperties": false,
 		"required": ["language", "title", "summary", "desc"],
@@ -12,6 +12,6 @@
 			"summary": { "type": "string" },
 			"desc": { "type": "string" }
 		}              
-	],
+	},
 	"additionalItems": false	
 }
