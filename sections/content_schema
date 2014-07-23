@@ -22,5 +22,5 @@
 			"quiz": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/quiz_schema" }
 		}              
 	],
-	"additionalItems" => false
+	"additionalItems": false
 }
