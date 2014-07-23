@@ -1,7 +1,7 @@
 {
 	"description": "MTG Object Content",
 	"type": "array",
-	"minItems": 1,
+	"minItems": 1,						
 	"items": {
 		"type": "object",
 		"additionalProperties": false,
@@ -15,7 +15,11 @@
 			"download": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/download_schema" },                        
 			"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
 			"audio": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/audio_video_schema" },
-			"video": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/audio_video_schema" }
+			"video": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/audio_video_schema" },              
+			"children": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/commoncompactmtg_array" },
+			"collections": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/commoncompactmtg_array" },
+			"references": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/commoncompactmtg_array" },
+			"quiz": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/quiz_schema" }
 		}              
 	}
 }
