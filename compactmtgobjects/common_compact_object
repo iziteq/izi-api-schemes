@@ -23,7 +23,7 @@
 		"duration": { "type": "integer" },
 		"distance": { "type": "integer" },
 		"purchase": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/purchase_schema" },
-		"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/full_location_schema" },
+		"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/simple_location_schema" },
 		"route": { "type": "string" },            
 		"trigger_zones": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/trigger_zones_schema" },
 		"placement": { "type": "string" },

@@ -15,11 +15,7 @@
 			"download": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/download_schema" },                        
 			"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
 			"audio": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/audio_video_schema" },
-			"video": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/audio_video_schema" },              
-			"children": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/common_object" },
-			"collections": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/common_object" },
-			"references": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/common_object" },
-			"quiz": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/quiz_schema" }
+			"video": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/audio_video_schema" }
 		}              
 	],
 	"additionalItems": false
