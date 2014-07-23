@@ -1,6 +1,7 @@
 {
 	"description": "Museum MTG Object",
 	"type": "object",		
+	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "publisher"],
 		"properties": {
 			"uuid" : {
@@ -11,6 +12,7 @@
 			"status": { "type": "string"},
 			"languages": { "type": "array"},					
 			"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
+			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_schema" },
 			"publisher": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/publisher_compact_object"}, 		
 			"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/geo_object_location_schema" },
 			"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" },
