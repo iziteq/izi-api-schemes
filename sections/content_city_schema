@@ -13,7 +13,7 @@
 				"summary": { "type": "string" },
 				"desc": { "type": "string" },                    
 				"images": { "type": "array" },             
-				"children": { "type": "array" },
+				"children": { "type": "array" }
 			} 
 		}		
 	],
