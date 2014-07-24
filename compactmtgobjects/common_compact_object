@@ -1,7 +1,6 @@
 {
 	"description": "Common Compact MTG Object",
 	"type": "object",
-	"additionalProperties": false,
 	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "publisher"],
 	"properties": {
 		"uuid" : {
