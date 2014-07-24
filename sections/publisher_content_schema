@@ -8,10 +8,8 @@
 			"additionalProperties": false,
 			"required": ["language", "title"],
 			"properties": {
-				# Required
 				"language": { "type": "string" },
 				"title": { "type": "string" },
-				# Optional
 				"summary": { "type": "string" },
 				"desc": { "type": "string" },                  
 				"images": { "type": "array" },             

@@ -14,10 +14,5 @@
 			"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
 			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/publisher_content_schema" },
 			"contacts": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/publisher_contacts_schema" },          
-		},
-    
-    # Tour dependencies
-    "dependencies": {
-      "placement": ["category", "duration", "distance"]
-    }
+		}
 }
