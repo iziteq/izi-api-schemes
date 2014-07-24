@@ -2,20 +2,22 @@
 	"description": "Publisher Content",
 	"type": "array",
 	"minItems": 1,						
-	"items": [
-		"type": "object",
-		"additionalProperties": false,
-		"required": ["language", "title"],
-		"properties": {
-			# Required
-			"language": { "type": "string" },
-			"title": { "type": "string" },
-			# Optional
-			"summary": { "type": "string" },
-			"desc": { "type": "string" },                  
-			"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },             
-			"children": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/common_object" },
-		}              
+	"items": [ 
+		{
+			"type": "object",
+			"additionalProperties": false,
+			"required": ["language", "title"],
+			"properties": {
+				# Required
+				"language": { "type": "string" },
+				"title": { "type": "string" },
+				# Optional
+				"summary": { "type": "string" },
+				"desc": { "type": "string" },                  
+				"images": { "type": "array" },             
+				"children": { "type": "array" },
+			}
+		}		
 	],
-	"additionalItems" => false
+	"additionalItems": false
 }

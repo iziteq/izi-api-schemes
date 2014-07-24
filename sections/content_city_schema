@@ -12,8 +12,8 @@
 				"title": { "type": "string" },
 				"summary": { "type": "string" },
 				"desc": { "type": "string" },                    
-				"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },             
-				"children": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/common_object" },
+				"images": { "type": "array" },             
+				"children": { "type": "array" },
 			} 
 		}		
 	],
