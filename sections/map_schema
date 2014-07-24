@@ -3,6 +3,8 @@
 	"type": "object",
 	"additionalProperties": false,
 	"required": ["bounds"],
-	"bounds": { "type": "string" },
-	"route": { "type": "string" }
+	"properties": {
+		"bounds": { "type": "string" },
+		"route": { "type": "string" }
+	}
 }
