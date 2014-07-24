@@ -10,11 +10,11 @@
 			},
 			"type": { "type": "string", "pattern": "^city$" },
 			"status": { "type": "string"},
-			"languages": { "type": "array"},					
+			"languages": { "type": "array" },					
 			"visible": { "type": "boolean" },
-			"content": { "type": "array"} },		
-			"location": { "type": "object"} },
-			"translations": { "type": "array"} },
-			"map": { "type": "object"} }        
+			"content": { "type": "array"} ,		
+			"location": { "type": "object"} ,
+			"translations": { "type": "array" },
+			"map": { "type": "object" }        
 		}
 }

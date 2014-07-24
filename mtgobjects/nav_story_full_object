@@ -16,6 +16,6 @@
 			"content": { "type": "array" },
 			"location": { "type": "object" },
 			"publisher": {"type": "object"}, 
-			"trigger_zones": { "type": "object" }
+			"trigger_zones": { "type": "array" }
 		}
 }
