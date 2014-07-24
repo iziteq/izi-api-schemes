@@ -11,10 +11,10 @@
 			"type": { "type": "string", "pattern": "^city$" },
 			"status": { "type": "string"},
 			"languages": { "type": "array"},					
-			"visible": { "tpe": "boolean" },
-			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_city_schema" },		
-			"location": { "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/city_location_schema" },
-			"translations": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/translations_schema" },
-			"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" }        
+			"visible": { "type": "boolean" },
+			"content": { "type": "array"} },		
+			"location": { "type": "object"} },
+			"translations": { "type": "array"} },
+			"map": { "type": "object"} }        
 		}
 }

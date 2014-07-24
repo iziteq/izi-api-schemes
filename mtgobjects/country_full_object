@@ -11,9 +11,9 @@
 			"type": { "type": "string", "pattern": "^country$" },
 			"status": { "type": "string"},
 			"languages": { "type": "array"},					
-			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_city_schema" },		
-			"location": { "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/simple_location_schema" },
-			"translations": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/translations_schema" },
-			"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" }        
+			"content": { "type": "array" },		
+			"location": { "type": "object" },
+			"translations": { "type": "array" },
+			"map": { "type": "object" }        
 		}
 }
