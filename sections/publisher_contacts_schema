@@ -21,7 +21,7 @@
 		"instagram": {
 			"type": "string"
 		},
-		"google": {
+		"googleplus": {
 			"type": "string"
 		}
 	}

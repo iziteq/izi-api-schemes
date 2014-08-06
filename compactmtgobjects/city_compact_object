@@ -20,7 +20,6 @@
 		"summary": { "type": "string" },            
 		"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/city_location_schema" },        
 		"translations": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/translations_schema" },
-		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
 		"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" },
 		"children_count": { "type": "integer" }
 	}
