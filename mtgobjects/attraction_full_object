@@ -11,6 +11,7 @@
 			"type": { "type": "string", "pattern": "^tourist_attraction$" },
 			"status": { "type": "string"},
 			"languages": { "type": "array"},
+			"parent_uuid": {"type": "string"},
 			"hidden": { "type": "boolean"},			
 			"content_provider": { "type": "object" },
 			"content": { "type": "array" },
