@@ -2,7 +2,7 @@
 	"description": "Tour-Museum-TA Location Object",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["latitude", "longitude", "altitude", "city_uuid", "country_code", "country_uuid"],
+	"required": ["latitude", "longitude", "altitude", "country_uuid"],
 	"properties": {
 		"latitude": { "type": "number" },
 		"longitude": { "type": "number" },
