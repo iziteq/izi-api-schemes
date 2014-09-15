@@ -1,0 +1,6 @@
+{
+	"description": "Array of Full MTG Objects",
+	"type": "array",				
+	"items": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/mtgobjects/common_full_object" },
+	"additionalItems": false
+}
