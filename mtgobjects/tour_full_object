@@ -2,7 +2,7 @@
 	"description": "Common full MTG Object",
 	"type": "object",		
 	"additionalProperties": false,
-	"required": ["uuid", "type", "status", "content_provider", "languages", "category", "duration", "distance", "placement", "content", "publisher"],
+	"required": ["uuid", "type", "status", "content_provider", "languages", "category", "duration", "distance", "placement", "content", "publisher", "hash", "size"],
 		"properties": {
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
@@ -10,6 +10,8 @@
 			},
 			"type": { "type": "string", "pattern": "^tour$" },
 			"status": { "type": "string"},
+			"hash": { "type": "string"},
+			"size": { "type": "number"},
 			"languages": { "type": "array"},				
 			"category": { "type": "string"},
 			"duration": { "type": "number"},

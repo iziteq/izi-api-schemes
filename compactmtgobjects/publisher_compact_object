@@ -2,7 +2,7 @@
 	"description": "Publisher Compact Object",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary"],
+	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "hash", "size"],
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
@@ -11,6 +11,8 @@
 		"type": { "type": "string", "pattern": "^publisher$" },
 		"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
 		"language": { "type": "string" },   
+		"hash": { "type": "string"},
+		"size": { "type": "number"},
 		"languages": { "type": "array",
 						"minItems": 1,
 						"items": { "type": "string"}

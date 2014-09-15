@@ -2,7 +2,7 @@
 	"description": "Full City Object",
 	"type": "object",		
 	"additionalProperties": false,
-	"required": ["uuid", "type", "status", "languages", "visible", "content"],
+	"required": ["uuid", "type", "status", "languages", "visible", "content", "hash", "size"],
 		"properties": {
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
@@ -10,6 +10,8 @@
 			},
 			"type": { "type": "string", "pattern": "^city$" },
 			"status": { "type": "string"},
+			"hash": { "type": "string"},
+			"size": { "type": "number"},
 			"languages": { "type": "array" },					
 			"visible": { "type": "boolean" },
 			"content": { "type": "array"} ,		

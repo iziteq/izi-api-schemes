@@ -2,7 +2,7 @@
 	"description": "Full Country Object",
 	"type": "object",		
 	"additionalProperties": false,
-	"required": ["uuid", "type", "status", "languages", "content"],
+	"required": ["uuid", "type", "status", "languages", "content", "hash", "size"],
 		"properties": {
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
@@ -10,6 +10,8 @@
 			},
 			"type": { "type": "string", "pattern": "^country$" },
 			"status": { "type": "string"},
+			"hash": { "type": "string"},
+			"size": { "type": "number"},
 			"languages": { "type": "array"},					
 			"content": { "type": "array" },		
 			"location": { "type": "object" },

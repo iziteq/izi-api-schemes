@@ -2,13 +2,15 @@
 	"description": "City Compact MTG Object",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["uuid", "type", "visible", "language", "languages", "status", "title", "summary"],
+	"required": ["uuid", "type", "visible", "language", "languages", "status", "title", "summary", "hash", "size"],
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
 			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
 		},
 		"type": { "type": "string", "pattern": "^city$" },
+		"hash": { "type": "string"},
+		"size": { "type": "number"},
 		"visible": { "type": "boolean" },
 		"language": { "type": "string" },   
 		"languages": { "type": "array",

@@ -2,13 +2,15 @@
 	"description": "Country Compact MTG Object",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["uuid", "type", "language", "languages", "status", "title", "summary"],
+	"required": ["uuid", "type", "language", "languages", "status", "title", "summary", "hash", "size"],
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
 			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
 		},
 		"type": { "type": "string", "pattern": "^country$" },
+		"hash": { "type": "string"},
+		"size": { "type": "number"},
 		"language": { "type": "string" },   
 		"languages": { "type": "array",
 						"minItems": 1,
