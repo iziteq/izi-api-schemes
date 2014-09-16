@@ -31,8 +31,6 @@
 			"city": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/city_compact_object" }, 
 			"country": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/country_compact_object" }           
 		},
-    
-    # Tour dependencies
     "dependencies": {
       "placement": ["category", "duration", "distance"]
     }
