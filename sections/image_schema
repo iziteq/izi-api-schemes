@@ -5,7 +5,7 @@
     "items": {
 		"type": "object",
 		"additionalProperties": false,
-		"required": ["uuid", "type", "order", "hash", "size"],
+		"required": ["uuid", "type", "order"],
 		"properties": {
 			"uuid": { "type": "string" },
 			"type": { "type": "string" },
