@@ -6,10 +6,12 @@
     "items": {
 		"type": "object",
 		"additionalProperties": false,
-		"required": ["uuid", "type", "order", "duration"],
+		"required": ["uuid", "type", "order", "duration", "hash", "size"],
 		"properties": {
 			"uuid": { "type": "string" },
 			"type": { "type": "string" },
+			"hash": { "type": "string"},
+			"size": { "type": "number"},
 			"order": { "type": "integer" },
 			"duration": { "type": "integer" },
 			"url": { "type": "string" },

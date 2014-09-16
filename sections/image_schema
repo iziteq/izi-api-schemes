@@ -5,10 +5,12 @@
     "items": {
 		"type": "object",
 		"additionalProperties": false,
-		"required": ["uuid", "type", "order"],
+		"required": ["uuid", "type", "order", "hash", "size"],
 		"properties": {
 			"uuid": { "type": "string" },
 			"type": { "type": "string" },
+			"hash": { "type": "string"},
+			"size": { "type": "number"},
 			"order": { "type": "integer" },
 			"url": { "type": "string" },
 			"title": { "type": "string" }
