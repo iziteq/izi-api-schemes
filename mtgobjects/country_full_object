@@ -17,6 +17,7 @@
 			"location": { "type": "object" },
 			"translations": { "type": "array" },
 			"map": { "type": "object" },
-			"country_code": {"type": "string"}
+			"country_code": {"type": "string"},
+			"children_count": { "type": "integer" }
 		}
 }
