@@ -2,7 +2,7 @@
 	"description": "Country Compact MTG Object",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["uuid", "type", "language", "languages", "status", "title", "summary", "hash", "size"],
+	"required": ["uuid", "type", "language", "languages", "status", "title", "summary", "hash"],
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
@@ -10,7 +10,6 @@
 		},
 		"type": { "type": "string", "pattern": "^country$" },
 		"hash": { "type": "string"},
-		"size": { "type": "number"},
 		"language": { "type": "string" },   
 		"languages": { "type": "array",
 						"minItems": 1,

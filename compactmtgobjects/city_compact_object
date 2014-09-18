@@ -2,7 +2,7 @@
 	"description": "City Compact MTG Object",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["uuid", "type", "visible", "language", "languages", "status", "title", "summary", "hash", "size"],
+	"required": ["uuid", "type", "visible", "language", "languages", "status", "title", "summary", "hash"],
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
@@ -10,7 +10,6 @@
 		},
 		"type": { "type": "string", "pattern": "^city$" },
 		"hash": { "type": "string"},
-		"size": { "type": "number"},
 		"visible": { "type": "boolean" },
 		"language": { "type": "string" },   
 		"languages": { "type": "array",

@@ -2,7 +2,7 @@
 	"description": "TA Full Object",
 	"type": "object",		
 	"additionalProperties": false,
-	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hidden", "location", "publisher", "hash", "size"],
+	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hidden", "location", "publisher", "hash"],
 		"properties": {
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
@@ -11,7 +11,6 @@
 			"type": { "type": "string", "pattern": "^tourist_attraction$" },
 			"status": { "type": "string"},
 			"hash": { "type": "string"},
-			"size": { "type": "number"},
 			"languages": { "type": "array"},
 			"parent_uuid": {"type": "string"},
 			"hidden": { "type": "boolean"},			

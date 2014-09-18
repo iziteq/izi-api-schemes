@@ -1,7 +1,7 @@
 {
 	"description": "Common Compact MTG Object",
 	"type": "object",
-	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "publisher", "hash", "size"],
+	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "publisher", "hash"],
 	"additionalProperties": false,
 	"properties": {
 		"uuid" : {
@@ -15,7 +15,6 @@
 		"languages": { "type": "array" }, 		
 		"status": { "type": "string" },
 		"hash": { "type": "string"},
-		"size": { "type": "number"},
 		"title": { "type": "string" },
 		"desc": { "type": "string" }, 
 		"summary": { "type": "string" },    
