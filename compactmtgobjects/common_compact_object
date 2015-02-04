@@ -32,6 +32,7 @@
 		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
 		"city": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/city_compact_object" }, 
 		"country": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/country_compact_object" }, 
-		"children_count": { "type": "integer" }
+		"children_count": { "type": "integer" },
+		"audio_duration": { "type": "integer" }
 	}
 }

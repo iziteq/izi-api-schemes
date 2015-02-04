@@ -20,7 +20,9 @@
 				"children": { "type": "array" },
 				"collections": { "type": "array" },
 				"references": { "type": "array" },
-				"quiz": { "type": "object" }
+				"quiz": { "type": "object" },
+				"children_count": { "type": "integer" },
+				"audio_duration": { "type": "integer" }
 			} 
 		}		
 	],
