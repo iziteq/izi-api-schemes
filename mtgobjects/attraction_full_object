@@ -20,6 +20,7 @@
 			"publisher": {"type": "object"}, 					
 			"trigger_zones": { "type": "array" },
 			"city": { "type": "object" }, 
-			"country": { "type": "object" }           
+			"country": { "type": "object" },
+		    "reviews": { "type": "object" }	           
 		}
 }

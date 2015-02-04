@@ -16,6 +16,7 @@
 			"parent_uuid": { "type": "string"},			
 			"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
 			"content": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_schema" },
-			"publisher": {"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/publisher_compact_object"}
+			"publisher": {"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/publisher_compact_object"},
+		    "reviews": { "ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/reviews_schema" }	
 		}
 }

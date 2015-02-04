@@ -25,6 +25,7 @@
 			"map": { "type": "object" },
 			"purchase": { "type": "object" },
 			"city": { "type": "object" }, 
-			"country": { "type": "object" }           
+			"country": { "type": "object" },
+		    "reviews": { "type": "object" }			
 		}
 }

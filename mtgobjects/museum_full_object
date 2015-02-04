@@ -21,6 +21,7 @@
 			"schedule": { "type": "object" },
 			"contacts": { "type": "object" }, 
 			"city": { "type": "object" }, 
-			"country": { "type": "object" } 			
+			"country": { "type": "object" },
+		    "reviews": { "type": "object" }	 			
 		}
 }

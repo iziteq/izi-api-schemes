@@ -28,6 +28,7 @@
 			"schedule": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/schedule_schema" },
 			"contacts": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/contacts_schema" }, 
 			"city": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/city_compact_object" }, 
-			"country": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/country_compact_object" }           
+			"country": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/country_compact_object" },
+			"reviews": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/reviews_schema" }
 		}
 }
