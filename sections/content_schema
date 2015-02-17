@@ -12,6 +12,7 @@
 				"title": { "type": "string" },
 				"summary": { "type": "string" },
 				"desc": { "type": "string" },
+				"news": { "type": "string" },
 				"playback": { "type": "object" },
 				"download": { "type": "object" },                        
 				"images": { "type": "array" },
