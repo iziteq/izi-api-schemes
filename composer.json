@@ -1,5 +1,5 @@
 {
- "name": "iziteq/libizi",
+ "name": "iziteq/izi-api-schemes",
  "license": "MIT",
   "autoload": {
     "psr-4": {
