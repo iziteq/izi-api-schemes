@@ -1,0 +1,9 @@
+{
+ "name": "iziteq/libizi",
+ "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Iziteq\\IziApiSchemes\\": "src/"
+    }
+  }
+}
