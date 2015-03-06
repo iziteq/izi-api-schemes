@@ -6,7 +6,7 @@
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
-			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
+			"$ref": "../sections/uuid_schema"
 		},
 		"type": { "type": "string", "pattern": "^city$" },
 		"hash": { "type": "string"},
@@ -19,10 +19,10 @@
 		"status": { "type": "string" },
 		"title": { "type": "string" },
 		"summary": { "type": "string" },            
-		"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/city_location_schema" },        
-		"translations": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/translations_schema" },
-		"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" },
-		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
+		"location": { "$ref": "../location/city_location_schema" },
+		"translations": { "$ref": "../sections/translations_schema" },
+		"map": { "$ref": "../sections/map_schema" },
+		"images": { "$ref": "../sections/image_schema" },
 		"children_count": { "type": "integer" }
 	}
 }

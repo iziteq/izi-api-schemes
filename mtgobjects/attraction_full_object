@@ -6,7 +6,7 @@
 		"properties": {
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
-				"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
+				"$ref": "../sections/uuid_schema"
 			},
 			"type": { "type": "string", "pattern": "^tourist_attraction$" },
 			"status": { "type": "string"},

@@ -6,11 +6,11 @@
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
-			"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/uuid_schema"
+			"$ref": "../sections/uuid_schema"
 		},
 		"type": { "type": "string" },
-		"content_provider": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/content_provider_schema" },
-		"publisher": {"$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/publisher_compact_object"}, 
+		"content_provider": { "$ref": "../sections/content_provider_schema" },
+		"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},
 		"language": { "type": "string" },   
 		"languages": { "type": "array" }, 		
 		"status": { "type": "string" },
@@ -22,18 +22,18 @@
 		"category": { "type": "string" },
 		"duration": { "type": "integer" },
 		"distance": { "type": "integer" },
-		"purchase": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/purchase_schema" },
-		"location": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/location/full_location_schema" },
-		"map": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/map_schema" },
+		"purchase": { "$ref": "../sections/purchase_schema" },
+		"location": { "$ref": "../location/full_location_schema" },
+		"map": { "$ref": "../sections/map_schema" },
 		"route": { "type": "string" },            
-		"trigger_zones": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/trigger_zones_schema" },
+		"trigger_zones": { "$ref": "../sections/trigger_zones_schema" },
 		"placement": { "type": "string" },
 		"hidden": { "type": "boolean" },
-		"images": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/image_schema" },
-		"city": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/city_compact_object" }, 
-		"country": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/country_compact_object" }, 
+		"images": { "$ref": "../sections/image_schema" },
+		"city": { "$ref": "../compactmtgobjects/city_compact_object" },
+		"country": { "$ref": "../compactmtgobjects/country_compact_object" },
 		"children_count": { "type": "integer" },
 		"audio_duration": { "type": "integer" },
-		"reviews": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/reviews_schema" }
+		"reviews": { "$ref": "../sections/reviews_schema" }
 	}
 }

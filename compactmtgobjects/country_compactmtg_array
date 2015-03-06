@@ -1,6 +1,6 @@
 {
 	"description": "Array of Country Compact MTG Objects",
 	"type": "array",				
-	"items": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/country_compact_object" },
+	"items": { "$ref": "../compactmtgobjects/country_compact_object" },
 	"additionalItems": false
 }

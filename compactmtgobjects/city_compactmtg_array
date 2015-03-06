@@ -1,6 +1,6 @@
 {
 	"description": "Array of City Compact MTG Objects",
 	"type": "array",				
-	"items": { "$ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/compactmtgobjects/city_compact_object" },
+	"items": { "$ref": "../compactmtgobjects/city_compact_object" },
 	"additionalItems": false
 }
