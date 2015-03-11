@@ -1,0 +1,31 @@
+{
+	"description": "Museum Compact MTG Object",
+	"type": "object",
+	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "publisher", "hash"],
+	"additionalProperties": false,
+	"properties": {
+		"uuid" : {
+			"description": "UUID of object (standardized by OSF)",
+			"$ref": "../sections/uuid_schema"
+		},
+		"type": { "type": "string" },
+		"content_provider": { "$ref": "../sections/content_provider_schema" },
+		"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},
+		"language": { "type": "string" },   
+		"languages": { "type": "array" }, 		
+		"status": { "type": "string" },
+		"hash": { "type": "string"},
+		"title": { "type": "string" },
+		"desc": { "type": "string" }, 
+		"summary": { "type": "string" },    
+		"quiz": { "type": "object" },        
+		"purchase": { "$ref": "../sections/purchase_schema" },
+		"location": { "$ref": "../location/full_location_schema" },
+		"images": { "$ref": "../sections/image_schema" },
+		"city": { "$ref": "../compactmtgobjects/city_compact_object" },
+		"country": { "$ref": "../compactmtgobjects/country_compact_object" },
+		"children_count": { "type": "integer" },
+		"audio_duration": { "type": "integer" },
+		"reviews": { "$ref": "../sections/reviews_schema" }
+	}
+}
