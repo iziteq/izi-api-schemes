@@ -22,6 +22,7 @@
 			"contacts": { "type": "object" }, 
 			"city": { "type": "object" }, 
 			"country": { "type": "object" },
-		    "reviews": { "type": "object" }	 			
+		    "reviews": { "type": "object" },
+			"purchase": { "type": "object" }			
 		}
 }
