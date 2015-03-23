@@ -26,6 +26,7 @@
 			"purchase": { "type": "object" },
 			"city": { "type": "object" }, 
 			"country": { "type": "object" },
-		    "reviews": { "type": "object" }			
+		    "reviews": { "type": "object" },
+			"sponsors": { "type": "array" }			
 		}
 }
