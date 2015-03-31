@@ -20,7 +20,6 @@
 		"summary": { "type": "string" },            
 		"location": { "$ref": "../location/simple_location_schema" },
 		"translations": { "$ref": "../sections/translations_schema" },
-		"images": { "$ref": "../sections/image_schema" },
 		"map": { "$ref": "../sections/map_schema" },
 		"children_count": { "type": "integer" },
 		"country_code": { "type": "string" }
