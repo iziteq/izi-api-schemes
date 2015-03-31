@@ -16,6 +16,7 @@
 			"content": { "type": "array"} ,		
 			"location": { "type": "object"} ,
 			"translations": { "type": "array" },
+			"children_count": { "type": "integer" },
 			"map": { "type": "object" }	
 		}
 }
