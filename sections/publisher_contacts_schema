@@ -6,9 +6,6 @@
 		"website": {
 			"type": "string"
 		},
-		"email": {
-			"type": "string"
-		},
 		"twitter": {
 			"type": "string"
 		},
