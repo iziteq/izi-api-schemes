@@ -19,6 +19,7 @@
 		"desc": { "type": "string" }, 
 		"summary": { "type": "string" },    
 		"quiz": { "type": "object" },        
+		"map": { "$ref": "../sections/map_schema" },
 		"purchase": { "$ref": "../sections/purchase_schema" },
 		"location": { "$ref": "../location/full_location_schema" },
 		"images": { "$ref": "../sections/image_schema" },
