@@ -1,0 +1,10 @@
+{
+  "description": "POST reviews reponse, see http://api-docs.izi.travel/#rating-amp-reviews",
+  "type": "object",   
+  "additionalProperties": false,
+  "required": ["metadata", "data"],
+  "properties": {
+    "metadata"   : { "$ref": "metadata"},
+    "data"       : { "$ref": "data"}
+  }
+}

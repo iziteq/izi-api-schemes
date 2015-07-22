@@ -3,20 +3,20 @@
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "languages", "content", "hash"],
-		"properties": {
-			"uuid" : {
-				"description": "UUID of object (standardized by OSF)",
-				"$ref": "../sections/uuid_schema"
-			},
-			"type": { "type": "string", "pattern": "^country$" },
-			"status": { "type": "string"},
-			"hash": { "type": "string"},
-			"languages": { "type": "array"},					
-			"content": { "type": "array" },		
-			"location": { "type": "object" },
-			"translations": { "type": "array" },
-			"map": { "type": "object" },
-			"country_code": {"type": "string"},
-			"children_count": { "type": "integer" }
-		}
+	"properties": {
+		"uuid" : {
+			"description": "UUID of object (standardized by OSF)",
+			"$ref": "../sections/uuid_schema"
+		},
+		"type"       : { "type": "string", "pattern": "^country$" },
+		"status"     : { "type": "string"},
+		"hash"       : { "type": "string"},
+		"languages"  : { "type": "array"},					
+		"content"       : { "$ref": "../sections/city_content_schema"  },
+		"location"      : { "$ref": "../location/full_location_schema" },
+	  "translations"  : { "$ref": "../sections/translations_schema"  },
+		"map"           : { "$ref": "../sections/map_schema" },
+		"country_code"  : { "type": "string"},
+		"children_count": { "type": "integer" }
+	}
 }

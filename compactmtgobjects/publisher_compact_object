@@ -16,9 +16,9 @@
 						"minItems": 1,
 						"items": { "type": "string"}
 		}, 		
-		"status": { "type": "string" },
-		"title": { "type": "string" },
-		"images": { "$ref": "../sections/image_schema" },
-		"summary": { "type": "string" }            
+		"status"	: { "type": "string" },
+		"title"		: { "type": "string" },
+		"images"	: { "$ref": "../sections/image_schema" },
+		"summary"	: { "type": "string" }            
 	}
 }

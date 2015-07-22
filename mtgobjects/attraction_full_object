@@ -2,25 +2,27 @@
 	"description": "TA Full Object",
 	"type": "object",		
 	"additionalProperties": false,
-	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hidden", "location", "publisher", "hash"],
+	// "publisher" is mandatory field, however con be excluded by &except= parameter
+	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hidden", "location", "hash"],
 		"properties": {
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
 				"$ref": "../sections/uuid_schema"
 			},
+			"id": { "type": "number"},
 			"type": { "type": "string", "pattern": "^tourist_attraction$" },
 			"status": { "type": "string"},
 			"hash": { "type": "string"},
 			"languages": { "type": "array"},
 			"parent_uuid": {"type": "string"},
 			"hidden": { "type": "boolean"},			
-			"content_provider": { "type": "object" },
-			"content": { "type": "array" },
-			"location": { "type": "object" },
-			"publisher": {"type": "object"}, 					
-			"trigger_zones": { "type": "array" },
-			"city": { "type": "object" }, 
-			"country": { "type": "object" },
-		    "reviews": { "type": "object" }	           
+			"content_provider": { "$ref": "../sections/content_provider_schema" },
+			"content": { "$ref": "../sections/content_schema" },
+			"location": { "$ref": "../location/full_location_schema" },
+			"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},			
+			"trigger_zones": { "$ref": "../sections/trigger_zones_schema" },
+			"city": { "$ref": "../compactmtgobjects/city_compact_object" },
+			"country": { "$ref": "../compactmtgobjects/country_compact_object" },
+		  "reviews": { "$ref": "../sections/reviews_schema" }          
 		}
 }

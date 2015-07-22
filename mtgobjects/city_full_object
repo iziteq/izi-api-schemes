@@ -3,20 +3,20 @@
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "languages", "visible", "content", "hash"],
-		"properties": {
-			"uuid" : {
-				"description": "UUID of object (standardized by OSF)",
-				"$ref": "../sections/uuid_schema"
-			},
-			"type": { "type": "string", "pattern": "^city$" },
-			"status": { "type": "string"},
-			"hash": { "type": "string"},
-			"languages": { "type": "array" },					
-			"visible": { "type": "boolean" },
-			"content": { "type": "array"} ,		
-			"location": { "type": "object"} ,
-			"translations": { "type": "array" },
-			"children_count": { "type": "integer" },
-			"map": { "type": "object" }	
-		}
+	"properties": {
+		"uuid" : {
+			"description": "UUID of object (standardized by OSF)",
+			"$ref": "../sections/uuid_schema"
+		},
+		"type"          : { "type": "string", "pattern": "^city$" },
+		"status"        : { "type": "string"},
+		"hash"          : { "type": "string"},
+		"languages"     : { "type": "array" },					
+		"visible"       : { "type": "boolean" },
+		"content"       : { "$ref": "../sections/city_content_schema"} ,		
+		"location"      : { "$ref": "../location/full_location_schema" },
+		"translations"  : { "$ref": "../sections/translations_schema"  },
+		"children_count": { "type": "integer" },
+		"map"           : { "$ref": "../sections/map_schema" }
+	}
 }

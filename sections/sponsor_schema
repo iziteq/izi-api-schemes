@@ -3,16 +3,16 @@
     "type": "array",
     "minItems": 1,
     "items": {
-		"type": "object",
-		"additionalProperties": false,
-		"required": ["uuid", "hash", "name", "website", "order", "images"],
-		"properties": {
-			"uuid": { "type": "string" },
-			"hash": { "type": "string" },
-			"name": { "type": "string"},
-			"website": { "type": "string"},
-			"order": { "type": "integer" },
-			"images": { "type": "array" }
-		}
+  		"type": "object",
+  		"additionalProperties": false,
+  		"required": ["uuid", "hash", "name", "website", "order", "images"],
+  		"properties": {
+  			"uuid"   : { "type": "string"  },
+  			"hash"   : { "type": "string"  },
+  			"name"   : { "type": "string"  },
+  			"website": { "type": "string"  },
+  			"order"  : { "type": "integer" },
+  			"images": { "$ref": "../sections/image_schema" }
+  		}
     }
 }

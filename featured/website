@@ -1,0 +1,33 @@
+{
+  "description": "Featured content for Website, see http://api-docs.izi.travel/#website-featured-content",
+  "type": "object",   
+  "additionalProperties": false,
+  "required": ["uuid", "type", "status", "language", "content_language"],
+    "properties": {
+      "uuid" : {
+        "description": "UUID of object (standardized by OSF)",
+        "$ref": "../sections/uuid_schema"
+      },
+      "type"                : { "type": "string"},
+      "status"              : { "type": "string"},
+      "language"            : { "type": "string"},
+      "content_language"    : { "type": "string"},
+      "content_languages": { "type": "array",
+            "minItems": 1,
+            "items": { "type": "string"}
+      }, 
+      "name": { "type": "string"},
+      "description": { "type": "string"},
+      "promoted": { "type": "boolean"},
+      "city_uuid" : {
+        "description": "UUID of object (standardized by OSF)",
+        "$ref": "../sections/uuid_schema"
+      },
+      "country_uuid" : {
+        "description": "UUID of object (standardized by OSF)",
+        "$ref": "../sections/uuid_schema"
+      },
+      "position" : { "type": "number"},
+      "images"   : { "$ref": "website_image_schema"}
+    }
+}

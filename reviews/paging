@@ -1,0 +1,13 @@
+{
+  "description": "Reviews paging section, see http://api-docs.izi.travel/#rating-amp-reviews",
+  "type": "object",   
+  "additionalProperties": false,
+  "required": ["limit", "returned_count", "total_count", "next", "previous"],
+  "properties": {
+    "limit"             : { "type": "number"},
+    "returned_count"    : { "type": "number"},
+    "total_count"       : { "type": "number"},
+    "next"              : { "type": [ "string", "null" ]},
+    "previous"          : { "type": [ "string", "null" ]}
+  }
+}

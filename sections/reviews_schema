@@ -4,8 +4,8 @@
 	"additionalProperties": false,
 	"required": ["rating_average", "ratings_count", "reviews_count"],
 	"properties": {
-		"rating_average": {"type": "number"},
-		"ratings_count": { "type": "number" },
-		"reviews_count": { "type": "number" }
+		"rating_average": { "type": "number" },
+		"ratings_count" : { "type": "number" },
+		"reviews_count" : { "type": "number" }
 	}
 }

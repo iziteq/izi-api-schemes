@@ -7,7 +7,8 @@
 		"answers" : {
 			"type": "array",
 			"minItems":2,
-			"maxItems":4,
+			// CMS currently supports up to 4 answers, however, there are content with more answers
+			// "maxItems":4,
 			"items":
 			{
 				"type": "object",

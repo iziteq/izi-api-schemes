@@ -1,0 +1,14 @@
+{
+  "description": "Image objects of featured content for Website, see http://api-docs.izi.travel/#website-featured-content, section FEATURED CONTENT IMAGES",
+    "type": "array",
+    "minItems": 1,
+    "items": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["uuid", "type"],
+      "properties": {
+        "uuid": { "type": "string" },
+        "type": { "type": "string" }
+      }
+    }
+}

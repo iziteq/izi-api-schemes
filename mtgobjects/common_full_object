@@ -2,12 +2,15 @@
 	"description": "Common full MTG Object",
 	"type": "object",		
 	"additionalProperties": false,
-	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "publisher", "hash"],
+	 // "publisher" is mandatory field, however con be excluded by &except= parameter
+	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hash"],
 		"properties": {
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
 				"$ref": "../sections/uuid_schema"
 			},
+			"id": { "type": "number"},
+			"size": { "type": "number"},
 			"type": { "type": "string"},
 			"status": { "type": "string"},
 			"hash": { "type": "string"},
@@ -29,6 +32,7 @@
 			"contacts": { "$ref": "../sections/contacts_schema" },
 			"city": { "$ref": "../compactmtgobjects/city_compact_object" },
 			"country": { "$ref": "../compactmtgobjects/country_compact_object" },
-			"reviews": { "$ref": "../sections/reviews_schema" }
+			"reviews": { "$ref": "../sections/reviews_schema" },
+			"sponsors": { "$ref": "../sections/sponsor_schema" }
 		}
 }

@@ -1,27 +1,29 @@
 {
 	"description": "Navigation Story Compact MTG Object",
 	"type": "object",
-	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "publisher", "hash"],
+	// "publisher" is mandatory field, however can be excluded by &except= parameter
+	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "hash"],
 	"additionalProperties": false,
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
 			"$ref": "../sections/uuid_schema"
 		},
-		"type": { "type": "string" },
+		"id"							: { "type": "number"},
+		"type"						: { "type": "string" },
 		"content_provider": { "$ref": "../sections/content_provider_schema" },
-		"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},
-		"language": { "type": "string" },   
-		"languages": { "type": "array" }, 		
-		"status": { "type": "string" },
-		"hash": { "type": "string"},
-		"title": { "type": "string" },
-		"desc": { "type": "string" }, 
-		"summary": { "type": "string" },    
-		"quiz": { "type": "object" },        
-		"location": { "$ref": "../location/full_location_schema" },         
-		"trigger_zones": { "$ref": "../sections/trigger_zones_schema" },
-		"images": { "$ref": "../sections/image_schema" },
-		"reviews": { "$ref": "../sections/reviews_schema" }
+		"publisher"				: { "$ref": "../compactmtgobjects/publisher_compact_object"},
+		"language"				: { "type": "string" },   
+		"languages"				: { "type": "array" }, 		
+		"status"					: { "type": "string" },
+		"hash"						: { "type": "string"},
+		"title"						: { "type": "string" },
+		"desc"						: { "type": "string" }, 
+		"summary"					: { "type": "string" },    
+		"quiz"          	: { "$ref": "../sections/quiz_schema" },        
+		"location"				: { "$ref": "../location/full_location_schema" },         
+		"trigger_zones"		: { "$ref": "../sections/trigger_zones_schema" },
+		"images"					: { "$ref": "../sections/image_schema" },
+		"reviews"					: { "$ref": "../sections/reviews_schema" }
 	}
 }

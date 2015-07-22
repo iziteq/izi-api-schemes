@@ -2,12 +2,14 @@
 	"description": "Collection MTG Object",
 	"type": "object",		
 	"additionalProperties": false,
-	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "parent_uuid", "publisher", "hash", "size"],
+	// "publisher" is mandatory field, however can be excluded by &except= parameter
+	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "parent_uuid", "hash", "size"],
 		"properties": {
 			"uuid" : {
 				"description": "UUID of object (standardized by OSF)",
 				"$ref": "../sections/uuid_schema"
 			},
+			"id": { "type": "number"},
 			"type": { "type": "string", "pattern": "^collection$" },
 			"status": { "type": "string"},
 			"hash": { "type": "string"},
@@ -17,6 +19,6 @@
 			"content_provider": { "$ref": "../sections/content_provider_schema" },
 			"content": { "$ref": "../sections/content_schema" },
 			"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},
-		    "reviews": { "ref": "https://raw.githubusercontent.com/iziteq/izi-api-schemes/master/sections/reviews_schema" }	
+		  "reviews": { "$ref": "../sections/reviews_schema" }
 		}
 }
