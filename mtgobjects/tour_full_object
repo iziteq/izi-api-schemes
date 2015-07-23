@@ -28,7 +28,6 @@
 			"purchase": { "$ref": "../sections/purchase_schema" },
 			"city": { "$ref": "../compactmtgobjects/city_compact_object" },
 			"country": { "$ref": "../compactmtgobjects/country_compact_object" },
-			"reviews": { "$ref": "../sections/reviews_schema" },
-			"sponsors": { "$ref": "../sections/sponsor_schema" }			
+			"reviews": { "$ref": "../sections/reviews_schema" }			
 		}
 }

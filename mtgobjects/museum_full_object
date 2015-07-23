@@ -26,7 +26,6 @@
 			"country": { "$ref": "../compactmtgobjects/country_compact_object" },
 			"trigger_zones": { "$ref": "../sections/trigger_zones_schema" },
 			"reviews": { "$ref": "../sections/reviews_schema" },
-			"purchase": { "$ref": "../sections/purchase_schema" },
-			"sponsors": { "$ref": "../sections/sponsor_schema" }
+			"purchase": { "$ref": "../sections/purchase_schema" }
 		}
 }
