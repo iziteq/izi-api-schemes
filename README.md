@@ -4,7 +4,7 @@ izi-api-schemes
 JSON Schemes for izi.TRAVEL API validation, see [izi.TRAVEL API Documentation](https://api-docs.izi.travel/ "izi.TRAVEL API Documentation")
 
 
-### Branches for certain API version:
+### Branches for certain API versions:
 
 #### Previous
   * [version/1.2.1](https://github.com/iziteq/izi-api-schemes/tree/version/1.2.1)
