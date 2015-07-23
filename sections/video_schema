@@ -15,8 +15,7 @@
   			"size"     : { "type": "number"  },
   			"order"    : { "type": "integer" },
   			"duration" : { "type": "integer" },
-  			"url"      : { "type": "string"  },
-  			"title"    : { "type": "string"  }
+  			"url"      : { "type": "string"  }
   		}
     }
 }
