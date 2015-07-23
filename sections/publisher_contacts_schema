@@ -20,9 +20,6 @@
 		},
 		"googleplus": {
 			"type": "string"
-		},
-		"vk": {
-			"type": "string"
 		}
 	}
 }

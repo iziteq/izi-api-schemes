@@ -25,6 +25,7 @@
 		"trigger_zones"		: { "$ref": "../sections/trigger_zones_schema" },
 		"hidden"					: { "type": "boolean" },
 		"images"					: { "$ref": "../sections/image_schema" },
+		"map"             : { "$ref": "../sections/map_schema" },
 		"reviews"					: { "$ref": "../sections/reviews_schema" }
 	}
 }
