@@ -1,32 +1,74 @@
 {
-	"description": "Museum MTG Object",
-	"type": "object",		
-	"additionalProperties": false,
-	// "publisher" is mandatory field, however can be excluded by &except= parameter
-	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hash", "size"],
-		"properties": {
-			"uuid" : {
-				"description": "UUID of object (standardized by OSF)",
-				"$ref": "../sections/uuid_schema"
-			},
-			"id": { "type": "number"},
-			"type": { "type": "string", "pattern": "^museum$" },
-			"status": { "type": "string"},
-			"hash": { "type": "string"},
-			"size": { "type": "number"},
-			"languages": { "type": "array"},					
-			"content_provider": { "$ref": "../sections/content_provider_schema" },
-			"content": { "$ref": "../sections/content_schema" },
-			"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},
-			"location": { "$ref": "../location/full_location_schema" },
-			"map": { "$ref": "../sections/map_schema" },
-			"schedule": { "$ref": "../sections/schedule_schema" },
-			"contacts": { "$ref": "../sections/contacts_schema" },
-			"city": { "$ref": "../compactmtgobjects/city_compact_object" },
-			"country": { "$ref": "../compactmtgobjects/country_compact_object" },
-			"trigger_zones": { "$ref": "../sections/trigger_zones_schema" },
-			"reviews": { "$ref": "../sections/reviews_schema" },
-			"purchase": { "$ref": "../sections/purchase_schema" },
-			"sponsors": { "$ref": "../sections/sponsor_schema" }
-		}
+  "description" : "Museum MTG Object",
+  "type" : "object",
+  "additionalProperties" : false,
+  "required" : ["uuid", "type", "status", "content_provider", "languages", "content", "hash", "size"],
+  "properties" : {
+    "uuid" : {
+      "description" : "UUID of object (standardized by OSF)",
+      "$ref" : "../sections/uuid_schema"
+    },
+    "id" : {
+      "type" : "number"
+    },
+    "type" : {
+      "type" : "string",
+      "pattern" : "^museum$"
+    },
+    "status" : {
+      "type" : "string"
+    },
+    "hash" : {
+      "type" : "string"
+    },
+    "size" : {
+      "type" : "number"
+    },
+    "languages" : {
+      "type" : "array"
+    },
+    "content_provider" : {
+      "$ref" : "../sections/content_provider_schema"
+    },
+    "content" : {
+      "$ref" : "../sections/content_schema"
+    },
+    "publisher" : {
+      "$ref" : "../compactmtgobjects/publisher_compact_object"
+    },
+    "location" : {
+      "$ref" : "../location/full_location_schema"
+    },
+    "map" : {
+      "$ref" : "../sections/map_schema"
+    },
+    "schedule" : {
+      "$ref" : "../sections/schedule_schema"
+    },
+    "playback_type" : {
+      "type" : "string",
+      "enum" : ["random"]
+    },
+    "contacts" : {
+      "$ref" : "../sections/contacts_schema"
+    },
+    "city" : {
+      "$ref" : "../compactmtgobjects/city_compact_object"
+    },
+    "country" : {
+      "$ref" : "../compactmtgobjects/country_compact_object"
+    },
+    "trigger_zones" : {
+      "$ref" : "../sections/trigger_zones_schema"
+    },
+    "reviews" : {
+      "$ref" : "../sections/reviews_schema"
+    },
+    "purchase" : {
+      "$ref" : "../sections/purchase_schema"
+    },
+    "sponsors" : {
+      "$ref" : "../sections/sponsor_schema"
+    }
+  }
 }
