@@ -1,10 +1,21 @@
-{ 
-	"description": "Playback - MTGObject playback algorithm settings",
-	"type": "object",
-	"additionalProperties": false,
-	"required": ["type"],
-	"properties": {
-		"type": { "type": "string" },
-		"order": { "type": "array" }
-	}
+{
+  "description" : "Playback - MTGObject playback algorithm settings",
+  "type" : "object",
+  "additionalProperties" : false,
+  "required" : ["type"],
+  "properties" : {
+    "type" : {
+      "description" : "Playback type",
+      "type" : "string",
+      "enum" : ["random", "sequential"]
+    },
+    "order" : {
+      "type" : "array",
+      "description" : "Ordered list of children UUDs for random or sequential types.",
+      "uniqueItems" : true,
+      "items" : {
+        "type" : "string"
+      }
+    }
+  }
 }

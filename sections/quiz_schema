@@ -1,34 +1,33 @@
 {
-	"description": "Quiz",
-	"type": "object",
-	"additionalProperties": false,
-	"required": ["answers", "question"],
-	"properties": {
-		"answers" : {
-			"type": "array",
-			"minItems":2,
-			// CMS currently supports up to 4 answers, however, there are content with more answers
-			// "maxItems":4,
-			"items":
-			{
-				"type": "object",
-				"additionalProperties": false,
-				"required": ["content", "correct"],
-				"properties": {
-					"content" : {
-						"type": "string"
-					},
-					"correct" : {
-						"type": "boolean"
-					}
-				}
-			}
-		},
-		"comment" : {
-			"type": "string"
-		},
-		"question" : {
-			"type": "string"
-		}
-	}
+  "description" : "Quiz",
+  "type" : "object",
+  "additionalProperties" : false,
+  "required" : ["answers", "question"],
+  "properties" : {
+    "answers" : {
+      "type" : "array",
+      "minItems" : 2,
+      "maxItems" : 10,
+      "items" :
+      {
+        "type" : "object",
+        "additionalProperties" : false,
+        "required" : ["content", "correct"],
+        "properties" : {
+          "content" : {
+            "type" : "string"
+          },
+          "correct" : {
+            "type" : "boolean"
+          }
+        }
+      }
+    },
+    "comment" : {
+      "type" : "string"
+    },
+    "question" : {
+      "type" : "string"
+    }
+  }
 }
