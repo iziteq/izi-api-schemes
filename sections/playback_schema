@@ -2,12 +2,7 @@
   "description" : "Playback sсhema",
   "type" : "object",
   "additionalProperties" : false,
-  "oneOf" : [{
-      "required" : ["type", "segments"]
-    }, {
-      "required" : ["type", "order"]
-    }
-  ],
+  "required" : ["type"],
   "properties" : {
     "type" : {
       "description" : "Playback type",
