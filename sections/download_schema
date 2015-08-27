@@ -1,14 +1,25 @@
 {
-	"description": "This object contains a list of links to offline packages",
-		"type": "object",
-		"additionalProperties": false,
-		"required": ["ios-jpg:low-m4a-mp4", "ios-jpg:high-m4a-mp4", "android-jpg:low-m4a-mp4", "android-jpg:high-m4a-mp4"],
-		"properties": {
-			"ios-jpg:low-m4a-mp4": { "$ref": "../sections/download_props_schema" },
-			"ios-jpg:high-m4a-mp4": { "$ref": "../sections/download_props_schema" },
-			"android-jpg:low-m4a-mp4": { "$ref": "../sections/download_props_schema" },
-			"android-jpg:high-m4a-mp4": { "$ref": "../sections/download_props_schema" },
-			"video": { "$ref": "../sections/download_props_schema" },
-			"map-mbtiles": { "$ref": "../sections/download_props_schema" }
-		}
+  "description" : "This object contains a list of links to offline packages",
+  "type" : "object",
+  "additionalProperties" : false,
+  "properties" : {
+    "ios-jpg:low-m4a-mp4" : {
+      "$ref" : "../sections/download_props_schema"
+    },
+    "ios-jpg:high-m4a-mp4" : {
+      "$ref" : "../sections/download_props_schema"
+    },
+    "android-jpg:low-m4a-mp4" : {
+      "$ref" : "../sections/download_props_schema"
+    },
+    "android-jpg:high-m4a-mp4" : {
+      "$ref" : "../sections/download_props_schema"
+    },
+    "video" : {
+      "$ref" : "../sections/download_props_schema"
+    },
+    "map-mbtiles" : {
+      "$ref" : "../sections/download_props_schema"
+    }
+  }
 }
