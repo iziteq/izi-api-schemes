@@ -1,18 +1,34 @@
 {
-  "description": "Featured content for Mobile applications, see http://api-docs.izi.travel/#apps-featured-content ",
-  "type": "object",   
-  "additionalProperties": false,
-  "required": ["uuid", "type", "title", "position", "images"],
-    "properties": {
-      "uuid" : {
-        "description": "UUID of object (standardized by OSF)",
-        "$ref": "../sections/uuid_schema"
-      },
-      "type"     : { "type": "string"},
-      "category" : { "type": "string"},
-      "title"    : { "type": "string"},
-      "sub_title": { "type": "string"},
-      "images"   : { "$ref": "mobile_image_schema"},
-      "position" : { "type": "number"}
+  "description" : "Featured content for Mobile applications, see https://api-docs.izi.travel/#apps-featured-content ",
+  "type" : "object",
+  "additionalProperties" : false,
+  "required" : ["uuid", "type", "title", "position", "images"],
+  "properties" : {
+    "uuid" : {
+      "description" : "UUID of object (standardized by OSF)",
+      "$ref" : "../sections/uuid_schema"
+    },
+    "type" : {
+      "type" : "string"
+    },
+    "category" : {
+      "type" : "string"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "sub_title" : {
+      "type" : "string"
+    },
+    "images" : {
+      "$ref" : "mobile_image_schema"
+    },
+    "position" : {
+      "type" : "number"
+    },
+    "playback_type" : {
+      "type" : "string",
+      "enum" : ["random", "sequential", "quest"]
     }
+  }
 }

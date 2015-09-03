@@ -1,33 +1,41 @@
 {
-  "description" : "Quiz",
+  "description" : "Quiz schema",
   "type" : "object",
   "additionalProperties" : false,
-  "required" : ["answers", "question"],
+  "required" : ["question", "answers"],
   "properties" : {
+    "question" : {
+      "description" : "Quiz’s question.",
+      "type" : "string"
+    },
+    "type" : {
+      "type" : "string",
+      "description" : "Quiz type.",
+      "enum" : ["choice", "enter"]
+    },
+    "comment" : {
+      "type" : "string",
+      "description" : "The comment for a correct answer."
+    },
     "answers" : {
       "type" : "array",
-      "minItems" : 2,
+      "minItems" : 1,
       "maxItems" : 10,
-      "items" :
-      {
+      "items" : {
         "type" : "object",
-        "additionalProperties" : false,
         "required" : ["content", "correct"],
+        "additionalProperties" : false,
         "properties" : {
           "content" : {
-            "type" : "string"
+            "type" : "string",
+            "description" : "Answer’s content."
           },
           "correct" : {
-            "type" : "boolean"
+            "type" : "boolean",
+            "description" : "Mark of correctness."
           }
         }
       }
-    },
-    "comment" : {
-      "type" : "string"
-    },
-    "question" : {
-      "type" : "string"
     }
   }
 }

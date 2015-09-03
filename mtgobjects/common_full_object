@@ -54,7 +54,8 @@
       "type" : "boolean"
     },
     "playback_type" : {
-      "type" : "string"
+      "type" : "string",
+      "enum" : ["random", "sequential", "quest"]
     },
     "location" : {
       "$ref" : "../location/full_location_schema"

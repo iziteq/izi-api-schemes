@@ -48,7 +48,8 @@
       "type" : "string"
     },
     "playback_type" : {
-      "type" : "string"
+      "type" : "string",
+      "enum" : ["random", "sequential", "quest"]
     },
     "duration" : {
       "type" : "integer"

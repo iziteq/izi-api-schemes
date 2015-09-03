@@ -43,7 +43,7 @@
     },
     "playback_type" : {
       "type" : "string",
-      "enum" : ["sequential"]
+      "enum" : ["random", "sequential", "quest"]
     },
     "quiz" : {
       "$ref" : "../sections/quiz_schema"

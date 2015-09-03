@@ -32,7 +32,7 @@
     },
     "playback_type" : {
       "type" : "string",
-      "enum" : ["sequential"]
+      "enum" : ["random", "sequential", "quest"]
     },
     "content_provider" : {
       "$ref" : "../sections/content_provider_schema"

@@ -47,7 +47,7 @@
     },
     "playback_type" : {
       "type" : "string",
-      "enum" : ["random"]
+      "enum" : ["random", "sequential", "quest"]
     },
     "contacts" : {
       "$ref" : "../sections/contacts_schema"
