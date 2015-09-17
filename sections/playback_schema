@@ -144,11 +144,12 @@
             "item" : {
               "type" : "string"
             },
-            "entered" : {
-              "type" : "boolean"
+            "type" : {
+              "type" : "string",
+              "enum" : ["item"]
             }
           },
-          "required" : ["item"]
+          "required" : ["item", "type"]
         }
       }
     }
