@@ -23,7 +23,8 @@
 				"references"    : { "$ref": "../compactmtgobjects/commoncompactmtg_array" },
 				"quiz"          : { "$ref": "../sections/quiz_schema" },
 				"children_count": { "type": "integer" },
-				"audio_duration": { "type": "integer" }
+				"audio_duration": { "type": "integer" },
+				"closing_line"  : { "type": "string" }
 			} 
 		}		
 	],
