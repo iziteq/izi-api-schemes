@@ -1,0 +1,16 @@
+{
+  "description": "Reviews metadata section, see http://api-docs.izi.travel/#rating-amp-reviews",
+  "type": "object",   
+  "additionalProperties": false,
+  "required": ["uuid"],
+  "properties": {
+    "uuid" : {
+      "description": "UUID of object (standardized by OSF)",
+      "$ref": "../sections/uuid_schema"
+    },
+    "ratings_count"  : { "type": "number"},
+    "rating_average" : { "type": "number"},
+    "date"           : { "type": "string"},
+    "reviews_count"  : { "type": "number"}
+  }
+}

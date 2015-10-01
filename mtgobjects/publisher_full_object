@@ -3,17 +3,17 @@
 	"type": "object",		
 	"additionalProperties": false,
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hash"],
-		"properties": {
-			"uuid" : {
-				"description": "UUID of object (standardized by OSF)",
-				"$ref": "../sections/uuid_schema"
-			},
-			"type": { "type": "string"},
-			"status": { "type": "string"},
-			"hash": { "type": "string"},
-			"languages": { "type": "array"},					
-			"content_provider": { "type": "object" },
-			"content": { "type": "array" },
-			"contacts": { "type": "object" }         
-		}
+	"properties": {
+		"uuid" : {
+			"description": "UUID of object (standardized by OSF)",
+			"$ref": "../sections/uuid_schema"
+		},
+		"type"            : { "type": "string"},
+		"status"          : { "type": "string"},
+		"hash"            : { "type": "string"},
+		"languages"       : { "type": "array"},					
+		"content_provider": { "$ref": "../sections/content_provider_schema"   },
+		"content"         : { "$ref": "../sections/publisher_content_schema"  },
+		"contacts"        : { "$ref": "../sections/publisher_contacts_schema" }
+	}
 }

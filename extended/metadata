@@ -1,0 +1,18 @@
+{
+  "description": "Extended children paging section",
+  "type": "object",   
+  "additionalProperties": false,
+  "required": ["offset", "limit", "total_count", "returned_count", "spent", "pages_total", "page_current", "pages_left", "pages_right", "page_out_of_bounds"],
+  "properties": {
+    "offset"            : { "type": "number"},
+    "limit"             : { "type": "number"},
+    "total_count"       : { "type": "number"},
+    "returned_count"    : { "type": "number"},
+    "spent"             :  { "type": "number"},
+    "pages_total"       :  { "type": "number"},
+    "page_current"      :  { "type": "number"},
+    "pages_left"        :  { "type": "boolean"},
+    "pages_right"       :  { "type": "boolean"},
+    "page_out_of_bounds":  { "type": "boolean"}
+  }
+}

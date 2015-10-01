@@ -1,33 +1,41 @@
 {
-	"description": "Quiz",
-	"type": "object",
-	"additionalProperties": false,
-	"required": ["answers", "question"],
-	"properties": {
-		"answers" : {
-			"type": "array",
-			"minItems":2,
-			"maxItems":4,
-			"items":
-			{
-				"type": "object",
-				"additionalProperties": false,
-				"required": ["content", "correct"],
-				"properties": {
-					"content" : {
-						"type": "string"
-					},
-					"correct" : {
-						"type": "boolean"
-					}
-				}
-			}
-		},
-		"comment" : {
-			"type": "string"
-		},
-		"question" : {
-			"type": "string"
-		}
-	}
+  "description" : "Quiz schema",
+  "type" : "object",
+  "additionalProperties" : false,
+  "required" : ["question", "answers"],
+  "properties" : {
+    "question" : {
+      "description" : "Quiz’s question.",
+      "type" : "string"
+    },
+    "type" : {
+      "type" : "string",
+      "description" : "Quiz type.",
+      "enum" : ["choice", "enter"]
+    },
+    "comment" : {
+      "type" : "string",
+      "description" : "The comment for a correct answer."
+    },
+    "answers" : {
+      "type" : "array",
+      "minItems" : 1,
+      "maxItems" : 10,
+      "items" : {
+        "type" : "object",
+        "required" : ["content", "correct"],
+        "additionalProperties" : false,
+        "properties" : {
+          "content" : {
+            "type" : "string",
+            "description" : "Answer’s content."
+          },
+          "correct" : {
+            "type" : "boolean",
+            "description" : "Mark of correctness."
+          }
+        }
+      }
+    }
+  }
 }

@@ -2,26 +2,6 @@
   "description" : "This object contains a list of links to offline packages",
   "type" : "object",
   "properties" : {
-    "ios-jpg:low-m4a-mp4" : {
-      "description" : "DEPRECATED",
-      "$ref" : "../sections/download_props_schema"
-    },
-    "ios-jpg:high-m4a-mp4" : {
-      "description" : "DEPRECATED",
-      "$ref" : "../sections/download_props_schema"
-    },
-    "android-jpg:low-m4a-mp4" : {
-      "description" : "DEPRECATED",
-      "$ref" : "../sections/download_props_schema"
-    },
-    "android-jpg:high-m4a-mp4" : {
-      "description" : "DEPRECATED",
-      "$ref" : "../sections/download_props_schema"
-    },
-    "video" : {
-      "description" : "DEPRECATED",
-      "$ref" : "../sections/download_props_schema"
-    },
     "map-mbtiles" : {
       "description" : "Off-line maps",
       "$ref" : "../sections/download_props_schema"

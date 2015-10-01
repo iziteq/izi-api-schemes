@@ -8,14 +8,14 @@
 			"additionalProperties": false,
 			"required": ["language", "title"],
 			"properties": {
-				"language": { "type": "string" },
-				"title": { "type": "string" },
-				"summary": { "type": "string" },
-				"desc": { "type": "string" },                  
-				"images": { "type": "array" },             
-				"children": { "type": "array" }
+				"language"  : { "type": "string" },
+				"title"     : { "type": "string" },
+				"summary"   : { "type": "string" },
+				"desc"      : { "type": "string" },                  
+				"images"    : { "$ref": "../sections/image_schema" },            
+				"children"  : { "$ref": "../compactmtgobjects/commoncompactmtg_array" }
 			}
-		}		
+		}
 	],
 	"additionalItems": false
 }

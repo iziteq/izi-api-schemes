@@ -2,7 +2,6 @@
 	"description": "City Location Object",
 	"type": "object",
 	"additionalProperties": false,
-	"required": ["latitude", "longitude", "altitude", "country_code", "country_uuid"],
 	"properties": {
 		"latitude": { "type": "number" },
 		"longitude": { "type": "number" },

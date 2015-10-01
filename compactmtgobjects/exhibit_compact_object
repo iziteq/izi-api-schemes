@@ -1,13 +1,15 @@
 {
 	"description": "Exhibit Compact MTG Object",
 	"type": "object",
-	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "publisher", "hash"],
+	// "publisher" is mandatory field, however can be excluded by &except= parameter
+	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "hash"],
 	"additionalProperties": false,
 	"properties": {
 		"uuid" : {
 			"description": "UUID of object (standardized by OSF)",
 			"$ref": "../sections/uuid_schema"
 		},
+		"id": { "type": "number"},
 		"type": { "type": "string" },
 		"content_provider": { "$ref": "../sections/content_provider_schema" },
 		"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},

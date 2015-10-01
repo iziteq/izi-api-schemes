@@ -3,6 +3,8 @@
 	"type":"object",
 	"additionalProperties": false,
 	"required": ["price", "currency"],
-	"price": { "type": "number" },
-	"currency": { "type": "string" }
+  "properties": {
+	  "price"   : { "type": "number" },
+	  "currency": { "type": "string" }
+  }
 }

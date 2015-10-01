@@ -1,0 +1,11 @@
+{
+  "description": "GET reviews reponse, see http://api-docs.izi.travel/#rating-amp-reviews",
+  "type": "object",   
+  "additionalProperties": false,
+  "required": ["metadata", "paging"],
+  "properties": {
+    "metadata"   : { "$ref": "metadata"},
+    "paging"     : { "$ref": "paging"},
+    "data"       : { "$ref": "data"}
+  }
+}

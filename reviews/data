@@ -1,0 +1,19 @@
+{
+  "description": "Reviews data section, see http://api-docs.izi.travel/#rating-amp-reviews",
+  "type": "array",
+  "minItems": 0,
+  "items": {
+    "type": "object",   
+    "additionalProperties": false,
+    "required": ["id", "date", "lang", "hash"],
+    "properties": {
+      "id"      : { "type": "number"},
+      "date"    : { "type": "string"},
+      "rating"  : { "type": "number"},
+      "review"  : { "type": [ "string", "null" ]},
+      "lang"    : { "type": "string"},
+      "hash"    : { "type": "string"},
+      "reviewer_name"  : { "type": [ "string", "null" ]}
+    }
+  }
+}

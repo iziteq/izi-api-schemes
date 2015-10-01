@@ -1,26 +1,61 @@
 {
-	"description": "Collection Compact MTG Object",
-	"type": "object",
-	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "publisher", "hash"],
-	"additionalProperties": false,
-	"properties": {
-		"uuid" : {
-			"description": "UUID of object (standardized by OSF)",
-			"$ref": "../sections/uuid_schema"
-		},
-		"type": { "type": "string" },
-		"content_provider": { "$ref": "../sections/content_provider_schema" },
-		"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},
-		"language": { "type": "string" },   
-		"languages": { "type": "array" }, 		
-		"status": { "type": "string" },
-		"hash": { "type": "string"},
-		"title": { "type": "string" },
-		"desc": { "type": "string" }, 
-		"summary": { "type": "string" },    
-		"quiz": { "type": "object" },
-		"images": { "$ref": "../sections/image_schema" },
-		"children_count": { "type": "integer" },
-		"reviews": { "$ref": "../sections/reviews_schema" }
-	}
+  "description" : "Collection Compact MTG Object",
+  "type" : "object",
+  "required" : ["uuid", "type", "content_provider", "language", "status", "title", "summary", "hash"],
+  "additionalProperties" : false,
+  "properties" : {
+    "uuid" : {
+      "description" : "UUID of object (standardized by OSF)",
+      "$ref" : "../sections/uuid_schema"
+    },
+    "id" : {
+      "type" : "number"
+    },
+    "type" : {
+      "type" : "string"
+    },
+    "content_provider" : {
+      "$ref" : "../sections/content_provider_schema"
+    },
+    "publisher" : {
+      "$ref" : "../compactmtgobjects/publisher_compact_object"
+    },
+    "language" : {
+      "type" : "string"
+    },
+    "languages" : {
+      "type" : "array"
+    },
+    "status" : {
+      "type" : "string"
+    },
+    "hash" : {
+      "type" : "string"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "desc" : {
+      "type" : "string"
+    },
+    "summary" : {
+      "type" : "string"
+    },
+    "playback_type" : {
+      "type" : "string",
+      "enum" : ["random", "sequential", "quest"]
+    },
+    "quiz" : {
+      "$ref" : "../sections/quiz_schema"
+    },
+    "images" : {
+      "$ref" : "../sections/image_schema"
+    },
+    "children_count" : {
+      "type" : "integer"
+    },
+    "reviews" : {
+      "$ref" : "../sections/reviews_schema"
+    }
+  }
 }

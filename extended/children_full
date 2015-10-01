@@ -1,0 +1,10 @@
+{
+  "description": "Children extended for full MTG Objects",
+  "type": "object",   
+  "additionalProperties": false,
+  "required": ["metadata"],
+  "properties": {
+    "metadata": { "$ref": "metadata" },
+    "data": { "$ref": "../mtgobjects/commonfullmtg_array" }
+  }
+}
