@@ -1,21 +1,19 @@
-izi-api-schemes
-===============
+[JSON Schema](http://json-schema.org/) for [izi.TRAVEL API](https://api-docs.izi.travel/ "izi.TRAVEL API Documentation")
+---------------
 
-JSON Schemes for izi.TRAVEL API validation, see [izi.TRAVEL API Documentation](https://api-docs.izi.travel/ "izi.TRAVEL API Documentation")
+License
+---------------
 
+    Copyright (C) 2015 IZITEQ B.V.
 
-### Branches for certain API versions:
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-#### Previous
-  * [version/1.2.1](https://github.com/iziteq/izi-api-schemes/tree/version/1.2.1)
-  * [version/1.2.2](https://github.com/iziteq/izi-api-schemes/tree/version/1.2.2)
-  * [version/1.2.3](https://github.com/iziteq/izi-api-schemes/tree/version/1.2.3)
-  * [version/1.2.4](https://github.com/iziteq/izi-api-schemes/tree/version/1.2.4)
+       http://www.apache.org/licenses/LICENSE-2.0
 
-#### Current
-  * [version/1.2.5](https://github.com/iziteq/izi-api-schemes/tree/version/1.2.5)
-
-#### Development (next)
-  * [version/1.2.6](https://github.com/iziteq/izi-api-schemes/tree/version/1.2.6)
-
-
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
