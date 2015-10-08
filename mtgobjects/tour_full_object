@@ -2,7 +2,6 @@
 	"description": "Common full MTG Object for tour",
 	"type": "object",		
 	"additionalProperties": false,
-	// "publisher" is mandatory field, however can be excluded by &except= parameter
 	"required": ["uuid", "type", "status", "content_provider", "languages", "category", "duration", "distance", "placement", "content", "hash", "size"],
 		"properties": {
 			"uuid" : {

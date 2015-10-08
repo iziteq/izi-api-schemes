@@ -2,7 +2,6 @@
 	"description": "TA Full Object",
 	"type": "object",		
 	"additionalProperties": false,
-	// "publisher" is mandatory field, however con be excluded by &except= parameter
 	"required": ["uuid", "type", "status", "content_provider", "languages", "content", "hidden", "location", "hash"],
 		"properties": {
 			"uuid" : {
