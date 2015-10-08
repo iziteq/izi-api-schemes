@@ -1,7 +1,6 @@
 {
 	"description": "Museum Compact MTG Object",
 	"type": "object",
-	// "publisher" is mandatory field, however can be excluded by &except= parameter
 	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "hash"],
 	"additionalProperties": false,
 	"properties": {
