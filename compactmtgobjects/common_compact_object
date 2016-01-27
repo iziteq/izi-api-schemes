@@ -96,6 +96,9 @@
     "news" : {
       "type" : "string"
     },
+    "closing_line" : {
+      "type" : "string"
+    },
     "reviews" : {
       "$ref" : "../sections/reviews_schema"
     }
