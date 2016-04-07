@@ -45,6 +45,9 @@
     },
     "reviews" : {
       "$ref" : "../sections/reviews_schema"
+    },
+    "duration" : {
+      "type" : "number"
     }
   }
 }
