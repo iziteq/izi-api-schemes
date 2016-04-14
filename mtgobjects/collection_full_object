@@ -48,6 +48,9 @@
     },
     "duration" : {
       "type" : "number"
+    },
+    "geo_distance": { 
+      "type": "number" 
     }
   }
 }

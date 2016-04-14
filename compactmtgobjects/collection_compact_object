@@ -59,6 +59,9 @@
     },
     "duration" : {
       "type" : "integer"
+    },
+    "geo_distance": { 
+      "type": "number" 
     }
   }
 }

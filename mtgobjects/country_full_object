@@ -17,6 +17,7 @@
 	  "translations"  : { "$ref": "../sections/translations_schema"  },
 		"map"           : { "$ref": "../sections/map_schema" },
 		"country_code"  : { "type": "string"},
-		"children_count": { "type": "integer" }
+		"children_count": { "type": "integer" },
+		"geo_distance"  : { "type": "number" }
 	}
 }

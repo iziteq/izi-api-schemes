@@ -69,6 +69,9 @@
     },
     "sponsors" : {
       "$ref" : "../sections/sponsor_schema"
+    },
+    "geo_distance": { 
+      "type": "number" 
     }
   }
 }

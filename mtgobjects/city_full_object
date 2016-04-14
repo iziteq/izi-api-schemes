@@ -17,6 +17,7 @@
 		"location"      : { "$ref": "../location/full_location_schema" },
 		"translations"  : { "$ref": "../sections/translations_schema"  },
 		"children_count": { "type": "integer" },
-		"map"           : { "$ref": "../sections/map_schema" }
+		"map"           : { "$ref": "../sections/map_schema" },
+		"geo_distance"  : { "type": "number" }
 	}
 }

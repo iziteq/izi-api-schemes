@@ -92,6 +92,12 @@
     },
     "reviews" : {
       "$ref" : "../sections/reviews_schema"
+    },
+    "geo_distance": { 
+      "type": "number" 
+    },
+    "locations": { 
+      "type": "string" 
     }
   }
 }

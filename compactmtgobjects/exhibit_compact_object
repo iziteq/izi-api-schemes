@@ -22,6 +22,7 @@
 		"quiz": { "type": "object" },
 		"location": { "$ref": "../location/exhibit_location_schema" },
 		"images": { "$ref": "../sections/image_schema" },
-		"reviews": { "$ref": "../sections/reviews_schema" }
+		"reviews": { "$ref": "../sections/reviews_schema" },
+		"geo_distance": { "type": "number" }
 	}
 }
