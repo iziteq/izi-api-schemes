@@ -18,6 +18,7 @@
 			"content": { "$ref": "../sections/content_schema" },
 			"location": { "$ref": "../location/full_location_schema" },
 			"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},
-		  "reviews": { "$ref": "../sections/reviews_schema" }
+		  "reviews": { "$ref": "../sections/reviews_schema" },
+		  "geo_distance": { "type": "number" }
 		}
 }

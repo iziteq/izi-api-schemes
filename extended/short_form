@@ -1,0 +1,27 @@
+{
+  "description": "Short form for search end-point (starting from API version 1.6",
+  "type": "object",   
+  "additionalProperties": false,
+  "required": ["uuid", "type", "hash"],
+  "properties": {
+    "type" : {
+      "type" : "string"
+    },
+    "uuid" : {
+      "description": "UUID of object (standardized by OSF)",
+      "$ref": "../sections/uuid_schema"
+    },
+    "hash" : {
+      "type" : "string"
+    }, 
+    "geo_distance": {
+      "type": "number"
+    },
+    "locations": {
+      "type": "string"
+    },    
+    "location": { 
+      "$ref": "../location/lat_lon_location_schema" 
+    }
+  }
+}

@@ -23,6 +23,7 @@
 			"city": { "$ref": "../compactmtgobjects/city_compact_object" },
 			"country": { "$ref": "../compactmtgobjects/country_compact_object" },
 			"map": { "$ref": "../sections/map_schema" },
-		  "reviews": { "$ref": "../sections/reviews_schema" }          
+		  "reviews": { "$ref": "../sections/reviews_schema" },
+		  "geo_distance": { "type": "number" }
 		}
 }

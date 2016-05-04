@@ -23,6 +23,7 @@
 		"location"				: { "$ref": "../location/full_location_schema" },         
 		"trigger_zones"		: { "$ref": "../sections/trigger_zones_schema" },
 		"images"					: { "$ref": "../sections/image_schema" },
-		"reviews"					: { "$ref": "../sections/reviews_schema" }
+		"reviews"					: { "$ref": "../sections/reviews_schema" },
+		"geo_distance"    : { "type": "number" }
 	}
 }
