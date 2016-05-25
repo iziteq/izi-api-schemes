@@ -19,6 +19,7 @@
 			"content": { "$ref": "../sections/content_schema" },
 			"location": { "$ref": "../location/full_location_schema" },
 			"publisher": {"$ref": "../compactmtgobjects/publisher_compact_object"},
-			"trigger_zones": { "$ref": "../sections/trigger_zones_schema" }
+			"trigger_zones": { "$ref": "../sections/trigger_zones_schema" },
+			"geo_distance": { "type": "number" }
 		}
 }

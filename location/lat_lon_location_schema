@@ -1,0 +1,14 @@
+{
+  "description" : "Location Object with latitude and longitude",
+  "type" : "object",
+  "additionalProperties" : false,
+  "required" : ["latitude", "longitude"],
+  "properties" : {
+    "latitude" : {
+      "type" : "number"
+    },
+    "longitude" : {
+      "type" : "number"
+    }
+  }
+}

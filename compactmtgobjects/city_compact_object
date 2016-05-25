@@ -23,6 +23,7 @@
 		"translations": { "$ref": "../sections/translations_schema" },
 		"map": { "$ref": "../sections/map_schema" },
 		"images": { "$ref": "../sections/image_schema" },
-		"children_count": { "type": "integer" }
+		"children_count": { "type": "integer" },
+		"geo_distance": { "type": "number" }
 	}
 }
