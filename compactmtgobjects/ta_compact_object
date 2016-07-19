@@ -1,31 +1,75 @@
 {
-	"description": "Tourist Attraction Compact MTG Object",
-	"type": "object",
-	"required": ["uuid", "type", "content_provider", "language", "status", "title", "summary", "hash"],
-	"additionalProperties": false,
-	"properties": {
-		"uuid" : {
-			"description": "UUID of object (standardized by OSF)",
-			"$ref": "../sections/uuid_schema"
-		},
-		"id"							: { "type": "number"},
-		"type"						: { "type": "string" },
-		"content_provider": { "$ref": "../sections/content_provider_schema" },
-		"publisher"				: {"$ref": "../compactmtgobjects/publisher_compact_object"},
-		"language"				: { "type": "string" },   
-		"languages"				: { "type": "array" }, 		
-		"status"					: { "type": "string" },
-		"hash"						: { "type": "string"},
-		"title"						: { "type": "string" },
-		"desc"						: { "type": "string" }, 
-		"summary"					: { "type": "string" },    
-		"quiz"						: { "$ref": "../sections/quiz_schema" },       
-		"location"				: { "$ref": "../location/full_location_schema" },        
-		"trigger_zones"		: { "$ref": "../sections/trigger_zones_schema" },
-		"hidden"					: { "type": "boolean" },
-		"images"					: { "$ref": "../sections/image_schema" },
-		"map"							: { "$ref": "../sections/map_schema" },
-		"reviews"					: { "$ref": "../sections/reviews_schema" },
-		"geo_distance"    : { "type": "number" }
-	}
+  "description" : "Tourist Attraction Compact MTG Object",
+  "type" : "object",
+  "required" : ["uuid", "type", "content_provider", "language", "status", "title", "summary", "hash"],
+  "additionalProperties" : false,
+  "properties" : {
+    "uuid" : {
+      "description" : "UUID of object (standardized by OSF)",
+      "$ref" : "../sections/uuid_schema"
+    },
+    "id" : {
+      "type" : "number"
+    },
+    "type" : {
+      "type" : "string"
+    },
+    "content_provider" : {
+      "$ref" : "../sections/content_provider_schema"
+    },
+    "publisher" : {
+      "$ref" : "../compactmtgobjects/publisher_compact_object"
+    },
+    "language" : {
+      "type" : "string"
+    },
+    "languages" : {
+      "type" : "array"
+    },
+    "status" : {
+      "type" : "string"
+    },
+    "hash" : {
+      "type" : "string"
+    },
+    "title" : {
+      "type" : "string"
+    },
+    "desc" : {
+      "type" : "string"
+    },
+    "summary" : {
+      "type" : "string"
+    },
+    "quiz" : {
+      "$ref" : "../sections/quiz_schema"
+    },
+    "location" : {
+      "$ref" : "../location/full_location_schema"
+    },
+    "trigger_zones" : {
+      "$ref" : "../sections/trigger_zones_schema"
+    },
+    "hidden" : {
+      "type" : "boolean"
+    },
+    "images" : {
+      "$ref" : "../sections/image_schema"
+    },
+    "map" : {
+      "$ref" : "../sections/map_schema"
+    },
+    "reviews" : {
+      "$ref" : "../sections/reviews_schema"
+    },
+    "geo_distance" : {
+      "type" : "number"
+    },
+    "city" : {
+      "$ref" : "../compactmtgobjects/city_compact_object"
+    },
+    "country" : {
+      "$ref" : "../compactmtgobjects/country_compact_object"
+    }
+  }
 }
