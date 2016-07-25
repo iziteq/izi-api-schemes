@@ -1,0 +1,15 @@
+{
+  "description" : "Presence object, API end-point /mtg/objects/:uuid/presence",
+  "type" : "object",
+  "additionalProperties" : false,
+  "required" : ["type"],
+  "properties" : {
+    "type" : {
+      "type" : "string",
+      "enum" : ["museum", "exhibit", "story_navigation", "tour", "tourist_attraction", "collection", "city", "country", "publisher"]
+    },
+    "hash" : {
+      "type" : "string"
+    }
+  }
+}

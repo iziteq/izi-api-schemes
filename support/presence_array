@@ -1,0 +1,8 @@
+{
+  "description" : "API end-point /mtg/objects/:uuid/presence",
+  "type" : "array",
+  "items" : {
+    "$ref" : "presence"
+  },
+  "additionalItems" : false
+}
